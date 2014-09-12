@@ -1,0 +1,106 @@
+/***** Body styles *****/
+body { font-size:.8em; font-family:Helvetica,Arial,sans-serif; }
+/***** Body styles *****/
+
+
+/***** Text Styles *****/
+h2 { font-size: 130%; }
+h3 { color:#333; font-size: 120%; }
+h4 { font-size: 110%; }
+div.hTitle { float:left; font-size: 36px !important; }
+/***** Text Styles *****/
+
+
+/***** Inputs *****/
+input[type="button"] { background:#CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:0 0 5px 0; min-width:120px; margin: 0; padding:10px; font-size: 12px; text-transform: none; font-weight: bold; color: #333; outline: none; overflow:hidden; border:0; }
+input[type="button"]:hover { background:#EEE; color:#666; border: 1px solid #CCC; padding:9px; }
+input[type="button"]:active { background-position: 0 -50px; color:#2C3549; }
+input[type=password]:hover, input[type=text]:hover, textarea:hover{ border-color: #000000; }
+input[type=password]:focus, input[type=text]:focus, textarea:focus { border-color: #CE0808; }
+
+.button { background:#CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding:0 0 5px 0; min-width:120px; margin: 0; padding:10px; font-size: 12px; text-transform: none; font-weight: bold; color: #333; outline: none; overflow:hidden; border:0; }
+.disabled { background-color: #EEE !important; }
+.button:hover { background:#EEE; color:#666; border: 1px solid #CCC; padding:11px; }
+.button:active { background-position: 0 -50px; color:#2C3549; }
+.input{ float: left !important; -moz-border-radius: 5px 5px 5px 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-bottom:3px; width: 230px; border: 1.5pt solid #D1CFCF; font-size: 12px  !important; padding: 5px !important; }
+.input-field { border:2px solid #D1CFCF; font-size:12px; margin-bottom:3px; padding:2px 5px; }
+/***** Inputs *****/
+
+
+/***** Containers *****/
+div#wrapper { margin: 0 auto; width: 960px; }
+#tabs { display: none; box-shadow: #999 0px 0px 15px; -webkit-box-shadow: #999 0px 0px 15px; -moz-box-shadow: 0 0 15px #999; }
+/***** Containers *****/
+
+
+/***** Header *****/
+div#header .title { float: left; }
+div#header .logo { float: right; height:100px; width:auto; }
+div#welcome-box { float:left; margin-bottom:20px; margin-top: 10px; }
+#avatar-box { float:left; width:50px; padding: 5px 5px 2px 5px; background-color: #ccc; margin: 1px 20px 0 0; }
+#userInfo { float:left; }
+/***** Header *****/
+
+
+/***** Footer *****/
+div#footer p { margin-top:10px; text-align: center; color: #333; font-size:11px; font-weight:bold; }
+LM_logo_link { border: none; }
+/***** Footer *****/
+
+
+/***** Utils *****/
+.clear { clear: both; }
+#loading { background:none repeat scroll 0 0 #CCCCCC; display:block; height:150%; left:0; opacity:0.8; filter:alpha(opacity=80); padding-top:270px; position:absolute; top:0; width:100%; }
+#loading div { text-align:center; }
+.error { color:red; }
+.export-div { float:left; clear:both; margin-top:10px; }
+/***** Utils *****/
+
+
+/***** Override jQuery tab styles *****/
+.ui-widget { font-family:Helvetica,Arial,sans-serif; }
+.custom-ui-widget-header { background:none !important; border:none !important; border-bottom:1px solid #AAAAAA !important; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+.ui-tabs-nav li { height:38px !important; font-size:18px !important; font-weight:normal; }
+.ui-state-default { font-weight:400 !important; background: none repeat scroll 0 0 #CCC !important; }
+.ui-state-default:hover { background:  none repeat scroll 0 0 #888 !important; }
+.ui-state-active { background: none repeat scroll 0 0 #fff !important; border-color: #ccc !important; }
+.ui-state-active:hover { background: none repeat scroll 0 0 #fff !important; border-color: #ccc !important; cursor:pointer; }
+.ui-tabs, .ui-tabs-nav { padding: 0.5em 1.2em 0 !important; }
+/***** Override jQuery tab styles *****/
+
+
+/***** Sprite styles *****/
+.sprite { background:none no-repeat top left; background-image:url("../images/sprite.png"); }
+.sprite-cross { background-position: 0 -106px; width: 24px; height: 24px !important; } 
+.sprite-cross_14x14 { background-position: 0 -180px; width: 14px; height: 14px !important; } 
+.sprite-gear_14x14 { background-position: 0 -244px; width: 14px; height: 14px !important; } 
+.sprite-lovemachine { background-position: 0 -308px; width: 190px; height: 80px !important; } 
+.sprite-no_picture { background-position: 0 -438px; width: 160px; height: 151px !important; } 
+/***** Sprite styles *****/
+
+
+/***** User list table *****/
+.common-table { width:100%; border-collapse: collapse; }
+.common-table td { border:1px solid #AAAAAA; padding:5px; width:50%; }
+.common-table td+td { width:20%; }
+.common-table td+td+td, .common-table td+td+td+td { width:15%; text-align:right; font-weight:bold; }
+.table-hdng { background:url("../images/tbg.jpg") repeat-x scroll left bottom transparent; height:30px; }
+.table-hdng td { color:#6F6F6F; font-size:13px; font-weight:bold; padding:5px; }
+.rowodd { background-color:#FFFFFF; }
+.roweven { background:#FFFFFF url(../images/evenrow2.jpg) repeat-x scroll left top; }
+.pagerDiv { display:table; margin-left:auto; margin-right:auto; }
+.page { margin-left:10px; margin-right:10px; }
+.pager { list-style-image:none; list-style-position:outside; list-style-type:none; margin:0; padding:0; }
+li.pager { border:1px solid #CCCCCC; cursor:pointer; float:left; padding:0 10px; }
+li.current { background:#CCCCCC none repeat scroll 0 0; cursor:default; }
+.pagerDiv ul li {border:1px solid #CCCCCC; cursor:pointer; float:left; padding:0 10px;}
+/***** User list table *****/
+
+.ui-dialog { box-shadow: #999 0px 0px 15px; -webkit-box-shadow: #999 0px 0px 15px; -moz-box-shadow: 0 0 15px #999; }
+#background-status { display: block; font-size: 12px; font-weight: bold; width: 150px; padding-right:40px; }
+#background-status-box { position: absolute; top: 5px; right: 10px; width: 200px; float: right; }
+.background-working { background: url(../images/loader.gif) no-repeat right center; padding-right:35px; padding-bottom: 30px; color:#d45955 !important; }
+.background-error { background: url(../images/cross.png) no-repeat right center; color:#D45955 !important; }
+.background-success { background: url(../images/cross.png) no-repeat right center; color: #6AA368 !important; }
+
+.logo_footer { border:none; background-position: 0 0; width: 70px; margin:0 auto; border: none; } 

@@ -1,0 +1,17 @@
+[production]
+login.name = "admin"
+login.key = ADMIN_API_KEY
+login.endpoint = "https://" SERVER_NAME "" APP_LOGIN
+review.key = REVIEW_API_KEY
+review.endpoint = "https://" SERVER_NAME "" REVIEW_APP_API 
+love.key = LOVE_API_KEY
+love.endpoint = "https://" SERVER_NAME "" LOVE_APP_API
+sales.key = SALES_API_KEY
+sales.endpoint = SALES_APP_API
+admin.key = 0
+
+[staging : production]
+
+[testing : production]
+
+[development : production]

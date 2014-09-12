@@ -1,0 +1,36 @@
+<h2>Notifications</h2>
+<div id="company_notifications">
+	<div class="weekly_updates">
+		<p><strong>Weekly Email List:</strong></p>
+		<p>
+			<label>
+				<input name="weeklyupdate" id="weeklyupdate" type="checkbox"<?php echo(isset($this->weeklyupdates) ? ' checked="checked"' : '') ?> /> Email a list of all love to everyone weekly
+			</label>
+		</p>
+		<form class="weekly_detail_settings" style="display: none;" action="<?php echo $this->baseUrl() ?>/company/weeklyupdates">
+			<p>
+				<label>Weekday:
+				    <select name="updateweekday" size="1">
+					<?php foreach ($this->weekdays as $index => $weekday) : ?>
+						<option value="<?php echo $index ?>"<?php echo((isset($this->weeklyupdates) && ($this->weeklyupdates['weekday'] == $index)) ? ' selected="selected"' : '') ?>><?php echo $weekday?></option>
+					<?php endforeach; ?>
+				    </select>
+				</label>
+			</p>
+		    <p>
+				<label>Time (Pacific Time): </label>
+			    <select name="updatehour" size="1">
+					<?php foreach ($this->hours as $hour) : ?>
+			        	<option value="<?php echo $hour ?>"<?php echo((isset($this->weeklyupdates) && ($this->weeklyupdates['hour'] == $hour)) ? ' selected="selected"' : '') ?>><?php echo(($hour < 10) ? '0' . $hour : $hour) ?></option>
+					<?php endforeach; ?>
+			    </select>:
+
+			    <select name="updateminute" size="1">
+					<?php foreach ($this->minutes as $min) : ?>
+			        	<option value="<?php echo $min ?>"<?php echo((isset($this->weeklyupdates) && ($this->weeklyupdates['minute'] == $min)) ? ' selected="selected"' : '') ?>><?php echo(($min < 10) ? '0' . $min : $min) ?></option>
+					<?php endforeach; ?>
+			    </select>
+			</p>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+/***** Reports styles *****/
+#reports { width:auto; }
+#statistics { width:auto; margin:1px; }
+#lreview { border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border: 2px #DCD998 solid; background-color:#FFD; padding:8px 8px 19px 8px; height:70px; margin-bottom: 20px; }
+#lreview table { width:100%; }
+#most-loved-users-table { height:250px; width:300px; float:left; border:1px solid #ccc; }
+#review-period, #active-users { display: none; }
+table.report-love-table { table-layout: fixed; border-collapse: collapse;}
+table.report-love-table td { padding-right: 0.8em;}
+table.report-love-table .col1 { width: 45%; }
+table.report-love-table .col2 { width: 20%; }
+table.report-love-table .col3 { width: 10%; }
+table.report-love-table .col4 { width: 10%; }
+table.report-love-table .col5 { width: 10%; font-weight:bold; text-align:right; }
+table.report-love-table .colTotal { font-weight:bold; text-align:right; }
+/***** Reports styles *****/
+
+
+/***** Charts *****/
+#users-completed-review-chart { height:250px; width:300px; float:left; border:1px solid #ccc; }
+#review-results-chart { border:1px solid #CCCCCC; float:left; height:250px; width:578px; }
+#anual-love-distribution-chart { border-top:1px solid #CCCCCC; float:left; height:250px; width:578px; }
+#love-count-chart { border:1px solid #ccc; height:300px; width:800px; margin-top:5px; }
+#rewarder-chart-title { border-top:1px solid #ccc; padding-top: 10px; width: 380px; float:left; font-weight:bold; }
+#love-distribution-chart-title { border-top:1px solid #ccc; padding-top: 10px; margin-left:25px; width: 380px; float:left; font-weight:bold; clear:both }
+#rewarder-chart {  width: 400px; float:left; min-height:1000px; max-height:3000px; }
+#love-distribution-chart { width: 400px; float:left; max-height:2000px; height:300px; }
+/***** Charts *****/
+
+
+/***** Periods *****/
+#rewarder-period { width: 400px; float:left; height:75px; margin-top:10px; }
+#love-distribution-period { width: 350px; float:left; height:75px; margin-top:10px; }
+#rewarder-notification-msg { border:1px solid #ccc; width: 30px; height:500px; }
+/***** Periods *****/
+

@@ -1,0 +1,37 @@
+[production]
+phpSettings.display_startup_errors = 0
+phpSettings.display_errors = 0
+phpSettings.auto_detect_line_endings = 1
+includePaths.library = APPLICATION_PATH "/../library"
+bootstrap.path = APPLICATION_PATH "/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+appnamespace = "Admin"
+companyid = COMPANY_ID
+loveEmail = LOVEMAIL
+loveLoginUrl = "https://" SERVER_NAME "" SANDBOX_URL_BASE "/love/"
+uploadPath = APPLICATION_PATH "" ADMIN_UPLOAD_PATH
+uploadUrl = ADMIN_UPLOAD_URL
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+resources.frontController.params.displayExceptions = 0
+resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts"
+resources.view[] =
+resources.view.helperPath.View_Helper = APPLICATION_PATH "/views/helpers"
+resources.db.adapter = "PDO_MYSQL"
+resources.db.params.host = DB_SERVER
+resources.db.params.username = DB_USER
+resources.db.params.password = DB_PASSWORD
+resources.db.params.dbname = DB_NAME
+dbTable.company = ADMIN_COMPANIES_TABLE
+dbTable.themes = ADMIN_THEMES_TABLE
+dbTable.all_assets = ADMIN_ALLASSETS_TABLE
+
+[staging : production]
+
+[testing : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+
+[development : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+resources.frontController.params.displayExceptions = 1

@@ -1,0 +1,314 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+/*    background:url(../images/mainbg.png) repeat-x 0 0 #CCC; */
+    font-size:14px;
+    line-height:1.4;
+}
+
+a {
+    color:#555;
+}
+a:hover {
+    color:#333;
+}
+#wrapper {
+    width:960px;
+    margin:0 auto;
+}
+/* header */
+
+#header {
+    height:170px;
+    padding:0 25px;
+    padding-top:25px;
+}
+#header h1 {
+    margin-bottom:15px;
+}
+#header #logostrap {
+    font-family: Helvetica, sans-serif;
+    font-size:20px;
+    color:#D10000;
+}
+#header #logo, #header #keypoints {
+    float:left;
+}
+#header #keypoints {
+    margin-top:10px;
+    color:#999;
+}
+#header #keypoints li {
+    margin-bottom:0.8em;
+}
+#header #keypoints strong{
+    font-size:18px;
+    font-weight:bold;
+    color:#666;
+}
+#header #logo {
+    width:450px;
+}
+#header #keypoints {
+    width:460px;
+}
+
+/* content */
+
+#content, #footer {
+    padding:0px;
+}
+
+/* info boxes */
+#aboutlm {
+    position:relative;
+    padding-top:40px;
+    overflow:hidden;
+}
+#aboutlm .box {
+    background:#FFF;
+}
+.box .header {
+    padding:6px 15px;
+    background:url(../images/boxbutton_bg.png) repeat-x 0 100% #929292;
+    color:#D1D1D1;
+    position:absolute;
+    top:0;
+    cursor:pointer;
+}
+.box .header h2 {
+    font-size:20px;
+    font-family: Helvetica, sans-serif;
+    font-weight:normal;
+}
+.current .header {
+    background:url(../images/boxbutton_current_bg.png) repeat-x 0 100% #D10000;
+    color:#FFF;
+}
+#how .header {
+    left:0;
+}
+#why .header {
+    left:165px;
+}
+#get .header {
+    right:0;
+    color:#FFF;
+    background:#093;
+}
+#get .header:hover, #get.current .header {
+    background:#15B952;
+}
+.box .content {
+    padding:25px 0;
+    background:url(../images/boxcontent_bg.png) repeat-y 427px 0 #FFF;
+    display:none;
+}
+.box .special {
+/*    background-image:none;*/
+}
+.current .content {
+    display:block;
+}
+.box .content ul {
+    margin-bottom:-15px;
+    width:450px;
+}
+.box .content li {
+    padding:10px 15px 10px 15px;
+    margin-bottom:15px;
+}
+
+.box .content li.current {
+    background:url(../images/current_line_bg.png) repeat-y 100% 0 #575757;
+    color:#FFF;
+}
+.box .content li .productshot {
+    position:absolute;
+    left:450px;
+    top:40px;
+    display:none;
+    z-index:100;
+}
+.box .content li.current .productshot {
+    display:block;
+}
+.box .content li.current .zoom {
+    cursor:pointer;
+}
+#payment_method, #payment_message {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    z-index:200;
+}
+#imageViewer, #emailMessage {
+    position:absolute;
+    top:100px;
+    left:50%;
+    width:200px;
+    margin-left:-100px;
+    padding:15px 0 0 0;
+    background:#000;
+    color:#FFF;
+    background:rgba(0,0,0,0.8);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 2px 5px #000;
+    -moz-box-shadow: 0px 2px 5px #000;
+    -webkit-box-shadow: 0px 2px 5px #000;
+    z-index:200;
+}
+#imageContainer {
+    margin:10px 10px 0px;
+    height:0;
+}
+#imageClose {
+    position:absolute;
+    top:5px;
+    right:10px;
+    color:#FFF;
+    text-decoration:none;
+}
+#tryme {
+    margin-top:15px;
+    font-size:20px;
+}
+#tryme a {
+    padding:6px 15px;
+    background:url(../images/boxbutton_bg.png) repeat-x 0 100% #929292;
+    color:#D1D1D1;
+    text-decoration:none;
+}
+#tryme a:hover {
+    background:#575757;
+    color:#FFF;
+}
+
+.special, .special input, .special textarea {
+    font-size:20px;
+}
+/*
+form {
+    width:475px;
+
+    margin-left:25px;
+    margin-bottom:-25px;
+    overflow:auto;
+}*/
+form label {
+    float:left;
+    width:135px;
+    clear:left;
+}
+form input, form textarea {
+    width: 245px;
+}
+form label.submit {
+    float:none;
+    display:block;
+    margin-left:135px;
+}
+
+#emailMessage p {
+    text-align:center;
+    padding:10px 0;
+}
+
+
+form p { 
+    font-size: 14px; 
+    margin: 3px;
+    height: 32px;
+}
+
+form p label { 
+    font-weight: bold; 
+}
+
+form p input { font-size: 14px; }
+
+#payment_method, #payment_message { 
+  
+}
+/*
+h3 { 
+    font-size: 1.2em; 
+    margin-bottom: 20px;!important 
+}
+*/
+#paypal_button {}
+
+form input[type=checkbox] {
+    width: auto;
+    margin-left: 3px;
+    padding-left: 0;
+}
+
+form input[type=image] { width: auto; }
+
+
+.push {
+    height: 100px;
+}
+
+.lovemachineInstanceArea {
+    float: left;
+    width:400px;
+}
+
+.postInformation {
+    display: none;
+    border: 1px solid red;
+    position: absolute;
+    width:400px;
+    bottom:20px;
+}
+
+.postInformationError {
+    border: 1px solid red;
+}
+
+.postInformationSuccess {
+    border: 1px solid green;
+}
+
+.paypalFormArea {
+    float:right;
+    width: 400px; 
+}
+.LV_validation_message {
+    display: block;
+    position: relative;
+    top:-8px;
+    
+}
+
+.LV_valid  {
+    display: none; 
+}
+.LV_invalid { 
+    color: red; 
+}
+
+div.title {
+    font-size:16px;
+    font-family: Helvetica, sans-serif;
+    font-weight:bold;
+    text-align: center;
+    margin:5px;
+}
+
+.api_for_debug {
+    display: none;
+}
+
+.api_for_debug_show {
+    display:inline;
+}
+
+.whatsthisTrigger { cursor: pointer; }

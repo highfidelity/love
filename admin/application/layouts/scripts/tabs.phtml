@@ -1,0 +1,12 @@
+<div id="tabs">
+   <ul>
+      <li><a href="<?php echo $this->baseUrl() ?>/company">Company Settings</a></li>
+      <li><a href="<?php echo $this->baseUrl() ?>/user">User Settings</a></li>
+      <!-- <li><a href="<?php echo $this->baseUrl() ?>/love">Love & Review</a></li> -->
+  	<?php if(ENABLE_REDEEM_RECOGNITION==true) { // case insensitive just in case :) ?>
+		    <li><a href="<?php echo $this->baseUrl() ?>/campaigns">Recognition Periods</a></li>
+    <?php } ?>
+      <li><a href="<?php echo $this->baseUrl() ?>/reports">Reports</a></li>
+   </ul>
+   <div id="background-status-box"><span id="background-status"></span></div>
+</div>

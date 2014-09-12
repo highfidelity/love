@@ -1,0 +1,16 @@
+<div>
+    <table class="common-table">
+        <thead>	
+            <tr id="report-reward-table-heading" class="table-hdng">
+                <td rel="username">Username</td>
+                <td rel="nickname">Nickname</td>
+                <td rel="points">Points</td>
+            </tr>
+        </thead>
+        <tbody id="report-rewarder-body">
+        </tbody>
+    </table>	
+    <div class="export-div">
+        <input type="button" class="button" id="export-report-rewarder" value="Export Report"/>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteBase /contrib
+#RewriteBase /~sandbox/sendlove_taskid/contrib
+
+RewriteCond %{REQUEST_FILENAME} -f [OR] 
+RewriteCond %{REQUEST_FILENAME} -d 
+RewriteRule .* - [L]
+
+
+RewriteCond ${REQUEST_FILENAME} ^/(.+\.compiled\.js) [NC]
+RewriteCond ${DOCUMENT_ROOT}/contrib/compiled/%1 -f
+RewriteRule (.*) /contrib/compiled/$1 [L]
+
+RewriteCond ${REQUEST_FILENAME} ^/(.+\.combined\.js) [NC]
+RewriteCond ${DOCUMENT_ROOT}/contrib/combined/%1 -f
+RewriteRule (.*) /contrib/combined/%1 [L]
+
+
+
+RewriteRule ^(.*)$ index.php [NC,L]

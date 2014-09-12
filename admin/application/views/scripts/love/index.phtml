@@ -1,0 +1,135 @@
+<h2>Choose Review Frequency</h2>
+
+<div id="LoveReview-settings" title="Love & Review Settings">
+    <div id="love-col-left">
+        <div id="LR-month"></div>
+    </div>
+
+    <div align="left">
+        <label>What month does your year begin on?</label>
+        <select name="month_begin" size="1">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+    </div>
+
+    <div id="love-col-left">
+        <div id="LR-freq"></div>
+    </div>
+
+    <div align="left">
+        <label>How often would you like to do reviews?</label>
+        <select name="review_freq" size="1">
+            <option value="Monthly">Monthly</option>
+            <option value="Quarterly">Quarterly</option>
+            <option value="Annually">Annually</option>
+        </select>
+    </div>
+
+    <div id="love-col-left">
+        <div id="LR-num-msgs"></div>
+    </div>
+
+    <div align="left">
+        <label>How many Love messages would like you employees to choose as part of their review?
+            <input type="text" name="num_msgs" size = "2">
+        </label>
+    </div>
+
+    <div id="love-col-left">
+        <div id="LR-love-mult"></div>
+    </div>
+
+    <div align="left">
+        <label>Love Value
+            <input name="love_multiplier" type="text" id="love_multiplier" size="5"/>
+        </label>
+    </div>
+
+    <div id="love-col-left">
+        <div id="LR-love-weekly">
+            <div align="left">
+                <label>Weekly Email List:
+                    <input name="weeklyupdate" type="checkbox" onClick="toggleStatus();"> Email a list of all love to everyone weekly
+                </label><br/>
+            </div>
+            <div id="love-col-left">
+                <div id="LR-love-weekly1">
+                    <div align="left">
+                        <label>Weekday: 
+                            <select name="weeklyupdates" size="1">
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
+                                <option value="0">Sunday</option>
+                            </select>
+
+                            Time: 
+                            <select name="updatehour" size="1">
+                                <option value="0">00</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                            </select>:
+
+                            <select name="updateminute" size="1">
+                                <option value="0">00</option>
+                                <option value="5">05</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="love-col-right">
+        <div id="LR-submit">
+            <input style="margin-right:8px;" id="LR-submit-btn" type="button" value="Save"/>
+        </div>
+    </div>
+</div>
+

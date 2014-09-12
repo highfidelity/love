@@ -1,0 +1,91 @@
+body {
+    background-color: #F4F4F2;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333333;
+    width: 820px;
+    bottom: 10px;
+    top: 50%;
+    left: 50%;
+    margin-left: -460px;
+    margin-top: -370px;
+    position: absolute;
+}
+
+h1 {
+    padding: 0px 129px 10px 129px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 56px;
+    font-family: "American Typewriter", Courier, Georgia, serif;
+    font-weight: normal;
+    color: #CC3300;
+    width: 820px;
+}
+	
+.disabledText {
+    width: 820px;
+    text-align: center;
+}
+
+.ui-dialog-title {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.ui-widget-content {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.ui-dialog {
+    position: absolute;
+    box-shadow: #999 0px 0px 15px;
+    -webkit-box-shadow: #999 0px 0px 15px;
+    -moz-box-shadow: 0 0 15px #999; 
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333333;
+}
+
+.ui-widget-content {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+#messageDialog input {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 3px;
+    padding: 2px;
+}
+
+#messageDialog ui-button,
+.ui-button-text  {
+    padding: 0px 0px 0px 0px !important;
+    height: auto;
+    width: auto;
+    font-size: .85em !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#messageDialog span {
+    background-position: 65px 5px;
+    clear: both;
+    padding: 20px;
+    font-size: 11px;
+    color: #FF0000;
+    text-align: left;
+    text-indent: 65px;
+}
+

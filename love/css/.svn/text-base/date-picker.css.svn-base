@@ -1,0 +1,71 @@
+div.datePicker {
+}
+
+div.datePicker table.quickLinks {
+    margin: 0 auto;
+    padding: 0;
+    border-collapse: collapse;
+    border: none ! important;
+}
+
+div.datePicker table.quickLinks td {
+    cursor: pointer;
+    cursor: hand;
+    text-decoration: underline;
+    padding: 3px 5px;
+    color: #6F6F6F;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    border: none ! important;
+}
+
+div.datePicker table.quickLinks td:hover {
+    color: #98AAB2;
+}
+
+div.datePicker table.months {
+    margin: 5px auto;
+    border-collapse: collapse;
+    border: none ! important;
+}
+
+div.datePicker table.months td {
+    cursor: pointer;
+    cursor: hand;
+    padding: 0;
+    border: none ! important;
+    border-right: 2px solid white ! important;
+    height: 48px;
+    width: 39px;
+    text-align: center;
+    font-size: 11px ! important;
+    line-height: 14px ! important;
+    vertical-align: top;
+    background: white left bottom no-repeat url(../images/date-picker.gif);
+}
+
+div.datePicker table.months td span {
+    display: block;
+}
+
+div.datePicker table.months td span.month {
+    background: left top no-repeat url(../images/date-picker.gif);
+    padding-top: 17px;
+}
+
+div.datePicker table.months td.hover {
+    background: center bottom no-repeat url(../images/date-picker.gif);
+}
+
+div.datePicker table.months td.selected {
+    background: right bottom no-repeat url(../images/date-picker.gif);
+}
+
+div.datePicker table.months td.hover span.month {
+    background: center top no-repeat url(../images/date-picker.gif);
+}
+
+div.datePicker table.months td.selected span.month {
+    background: right top no-repeat url(../images/date-picker.gif);
+}

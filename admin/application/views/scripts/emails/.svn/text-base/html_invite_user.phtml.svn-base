@@ -1,0 +1,4 @@
+<p><?php echo $this->invitor_nickname ?> (<?php echo $this->invitor_email ?>) has invited you to join <?php echo $this->company_name ?> on SendLove.</p>
+<p><a href=\"<?php echo $this->url ?>\">Accept this invitation.</a></p>
+<p>Love,
+<br/>SendLove</p>

@@ -1,0 +1,53 @@
+<div id="advanced-settings" title="User Administration">
+    <div id="au-col-left">
+        <div id="au-user-picture">
+            <div id="no-picture" class="sprite sprite-no_picture"></div>
+            <img id="picture" src="images/blank.png" alt="Avatar" title="Click to change..." height="148" width="148"/>
+        </div>
+    </div>
+
+    <div id="au-col-right">
+        <div id="au-user-info-box">
+            <div id="au-nickname" title="Click to change...">Loading...</div>
+            <input style="display:none;" id="au-nickname-field" type="text" title="Click out to finish editing"/>
+            <div id="au-email" title="Click to change...">Loading...</div>
+            <input style="display:none;" id="au-email-field" type="text" title="Click out to finish editing"/>
+
+            <div id="au-team-block">
+                <div id="au-team">Team</div>
+                <input id="au-team-field" type="text"/>
+            </div>
+            <div id="au-skill-block">
+                <div id="au-skill">Skill</div>
+                <input id="au-skill-field" type="text"/>
+            </div>
+        </div>
+
+        <div class="au-box">
+            <div class="au-label">Password</div>
+            <div class='au-input'><input id="au-reset-pass-btn" type="button" value="Reset"/></div>
+        </div>
+        <!--
+        <div class="au-box">
+            <div class="au-label">Review</div>
+            <div class='au-input'><input id="au-reset-review-btn" type="button" 
+                    title="Reset the user review for the current period"value="Reset"/></div>
+        </div>
+        -->
+ 
+        <div class="au-box">
+            <div class="au-label">User status</div>
+            <div class='au-input'>
+                <input id="au-deactivate-user" type="button" value="Deactivate"/><input id="au-remove-user" type="button" value="Remove"/>
+            </div>
+        </div>
+        
+        <!-- If the dialog is called for an auditor we'll show the following controls -->
+        
+        
+    </div>
+    <div id="au-submit">
+        <span class="LV_validation_message LV_invalid upload" style="display: none;"></span>
+        <input style="margin-right:8px;" id="au-submit-btn" type="button" value="Save"/><input id="au-cancel-btn" type="button" value="Cancel"/>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<?php echo $this->headMeta() ?>
+		<?php echo $this->headTitle() ?>
+		<?php echo $this->headLink() ?>
+		<?php echo $this->headStyle() ?>
+		<script type="text/javascript">
+        var uservoiceOptions = {
+          /* required */
+          key: 'sendlove',
+          host: 'sendlove.uservoice.com', 
+          forum: '75971',
+          showTab: true,  
+          /* optional */
+          alignment: 'right',
+          background_color:'#f00', 
+          text_color: 'white',
+          hover_color: '#000',
+          lang: 'en'
+        };
+
+        function _loadUserVoice() {
+          var s = document.createElement('script');
+          s.setAttribute('type', 'text/javascript');
+          s.setAttribute('src', ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js");
+          document.getElementsByTagName('head')[0].appendChild(s);
+        }
+        _loadSuper = window.onload;
+        window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
+        </script>
+        
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<?php echo $this->render('header.phtml') ?>
+			</div>
+			<div id="content">
+				<?php echo $this->render('tabs.phtml') ?>
+				<?php echo $this->layout()->content ?>
+			</div>
+			<div id="footer">
+				<?php echo $this->render('footer.phtml') ?>
+			</div>
+		</div>
+		<div id="loading">
+			<div>
+				<img src="<?php echo $this->baseUrl() ?>/images/ajax-loader.gif" title="Loading" />
+			</div>
+		</div>
+	</body>
+	<?php echo $this->adminHeadScript() ?>
+</html>

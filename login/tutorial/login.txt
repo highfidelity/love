@@ -1,0 +1,46 @@
+URL of the login controller is defined in the config.php
+The constant is LOGIN_APP_URL.
+
+The login app provides different action.
+To call an action, you need to call(the code below is php) 
+LOGIN_APP_URL."action"
+
+List of actions:
+1. login(LOGIN_APP_URL."login") - authenticates a user against username and password. 
+2. create (LOGIN_APP_URL."create") - create a new user
+3. update(LOGIN_APP_URL."update") - updates an existing user
+4. logout(LOGIN_APP_URL."logout") - logs out a user and cleans the sesion
+5. delete(LOGIN_APP_URL."delete") - deletes an existing user
+6. confirm(LOGIN_APP_URL."confirm") - confirms user email
+7. resettoken(LOGIN_APP_URL."resettoken") - resets the token when resetting the password via email
+8. changepassword(LOGIN_APP_URL."changepassword") - change user's password via email
+
+How to  work with the login app
+There is a class in the love repo called CURLHandler. The class is located in love/class/CURLHandler.php
+You need to include the CURLHandler in your document:
+require_once("class/CURLHandler.php");
+then all you need to do is
+    ob_start();
+        // send the request
+        CURLHandler::Post(LOGIN_APP_URL . 'update', array(
+          'nickname' => 'username'
+          'password' => 'password'
+        ));
+        $result = ob_get_contents();
+        ob_end_clean();
+    // the output of the login app is stored in $request
+    //  decode the output as json
+        $result = json_decode($result);
+        if($result->error > 0){
+      // there is error, output messages
+      if(is_array($result->message)){
+        foreach($result->message){
+          echo $message;
+        }
+      } else {
+        echo $message;
+      }
+    } else {
+      // request was successful do some processing
+    }
+The login app will always return json encoded output. All you need to do is decode it and use it in your app.

@@ -1,0 +1,13 @@
+* { outline: none; }
+#footer { border: none !important; }
+#contentBody{ padding: 20px; }
+#basics, #userData, #userPic{ float: left; }
+#userPic{ margin-right: 20px; border: 1px solid #000; -webkit-box-shadow: 0px 5px 5px #444; -moz-box-shadow: 0px 5px 5px #444; box-shadow: 0px 5px 5px #444; }
+#userData{ height: 220px; position: relative; }
+div#nickname{ font-size: 36px; }
+div#averages{ font-size: 18px; margin: 20px 20px 0 0; }
+div#totals{ font-size: 18px; font-weight: bold; position: absolute; bottom: 0; }
+.contents a{ color: #222222; }
+
+
+

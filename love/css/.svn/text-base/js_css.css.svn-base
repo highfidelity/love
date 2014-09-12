@@ -1,0 +1,251 @@
+/*  
+	Copyright (c) 2009, LoveMachine Inc.
+    All Rights Reserved. 
+    http://www.lovemachineinc.com
+*/
+ {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+INPUT {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica, sans-serif;
+}
+
+SELECT {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+BODY {
+	COLOR: #333; BACKGROUND-COLOR: #fff; TEXT-ALIGN: center
+}
+A:link {
+	COLOR: #0060bf; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0060bf; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #0060bf; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+H1 {
+	FONT-WEIGHT: bold; COLOR: #666; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", geneva, verdana, arial, helvetica, sans-serif
+}
+H2 {
+	FONT-WEIGHT: bold; COLOR: #666; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", geneva, verdana, arial, helvetica, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; COLOR: #666; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", geneva, verdana, arial, helvetica, sans-serif
+}
+H4 {
+	FONT-WEIGHT: bold; COLOR: #666; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", geneva, verdana, arial, helvetica, sans-serif
+}
+H5 {
+	FONT-WEIGHT: bold; COLOR: #666; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", geneva, verdana, arial, helvetica, sans-serif
+}
+H6 {
+	FONT-WEIGHT: bold; COLOR: #666; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", geneva, verdana, arial, helvetica, sans-serif
+}
+H1 {
+	FONT-SIZE: 1.8em; MARGIN: 0em 0em 0.6em; COLOR: #ec5800
+}
+H2 {
+	FONT-SIZE: 1.5em; MARGIN: 1.2em 0em 0.4em
+}
+H3 {
+	FONT-SIZE: 1.4em; MARGIN: 1.2em 0em 0.4em; COLOR: #ec5800
+}
+H4 {
+	FONT-SIZE: 1.2em; MARGIN: 1.2em 0em 0.4em
+}
+H5 {
+	FONT-SIZE: 1em; MARGIN: 1.2em 0em 0.4em
+}
+H6 {
+	FONT-SIZE: 0.8em; MARGIN: 1.2em 0em 0.4em
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+P {
+	FONT-SIZE: 1em; MARGIN: 1.2em 0em; LINE-HEIGHT: 1.3em
+}
+UNKNOWN {
+	MARGIN-TOP: 0.2em
+}
+PRE {
+	FONT-SIZE: 1em; FONT-FAMILY: monospace
+}
+STRONG {
+	FONT-WEIGHT: bold
+}
+B {
+	FONT-WEIGHT: bold
+}
+#content {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; MARGIN: 0em auto; WIDTH: 765px; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+.content {
+	MARGIN-LEFT: 4.5em; MARGIN-RIGHT: 4.5em
+}
+.content OL {
+	FONT-SIZE: 1em; MARGIN: 0.2em 0px 0.1em 1.5em; LINE-HEIGHT: 1.3em
+}
+.content UL {
+	FONT-SIZE: 1em; MARGIN: 0.2em 0px 0.1em 1.5em; LINE-HEIGHT: 1.3em
+}
+.content LI {
+	FONT-SIZE: 1em; MARGIN: 0.2em 0px 0.1em 1.5em; LINE-HEIGHT: 1.3em
+}
+.content OL.terms LI {
+	MARGIN-BOTTOM: 1em
+}
+#header {
+	PADDING-BOTTOM: 10em
+}
+#headerlogo {
+	FLOAT: left
+}
+#headerlogo IMG {
+	WIDTH: 188px; HEIGHT: 83px
+}
+#headernav {
+	FLOAT: right
+}
+LABEL {
+	FONT-WEIGHT: bold
+}
+#reminders LABEL {
+	FONT-WEIGHT: normal
+}
+TABLE.tabbedtable {
+	PADDING-LEFT: 3em
+}
+TABLE.tabbedtable TD {
+	PADDING-BOTTOM: 5px
+}
+TABLE.tabbedtable LABEL {
+	PADDING-RIGHT: 9px; TEXT-ALIGN: right
+}
+.hiddenlabel {
+	VISIBILITY: hidden
+}
+.largelink {
+	BORDER-RIGHT: #cacaca 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #cacaca 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 1.2em; PADDING-BOTTOM: 10px; BORDER-LEFT: #cacaca 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #cacaca 1px solid; BACKGROUND-COLOR: #e8eef7
+}
+.largelinkwrap {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#signuptab {
+	FONT-SIZE: 1em; BACKGROUND: url(bg.gif) #fff repeat-x 50% bottom; FLOAT: left; WIDTH: 100%; LINE-HEIGHT: normal
+}
+#signuptab UL {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#signuptab LI {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 9px; BACKGROUND: url(left_white.png) no-repeat left top; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #cacaca 1px solid
+}
+#signuptab A {
+	PADDING-RIGHT: 15px; DISPLAY: block; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BACKGROUND: url(right_white.png) no-repeat right top; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 0.1em; COLOR: #fff; PADDING-TOP: 2px; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+UNKNOWN {
+	WIDTH: auto
+}
+#signuptab A {
+	FLOAT: none
+}
+#signuptab A:hover {
+	COLOR: #333
+}
+#signuptab #signupcurrent {
+	BORDER-TOP-WIDTH: 0px; BACKGROUND-POSITION: 0px -150px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#signuptab #signupcurrent A {
+	BACKGROUND-POSITION: 100% -150px; PADDING-BOTTOM: 1px; COLOR: #000
+}
+#signuptab LI:hover {
+	BACKGROUND-POSITION: 0% -150px; COLOR: #000
+}
+#signuptab LI:hover A {
+	BACKGROUND-POSITION: 0% -150px; COLOR: #000
+}
+#signuptab LI:hover A {
+	BACKGROUND-POSITION: 100% -150px
+}
+#signupbox {
+	MARGIN: 0em auto; WIDTH: 100%; TEXT-ALIGN: center
+}
+#signupwrap {
+	CLEAR: both; BORDER-RIGHT: #cacaca 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #cacaca 0px solid; PADDING-LEFT: 30px; PADDING-BOTTOM: 20px; BORDER-LEFT: #cacaca 1px solid; PADDING-TOP: 35px; BORDER-BOTTOM: #cacaca 1px solid; TEXT-ALIGN: left
+}
+.orange_rbcontent {
+	PADDING-RIGHT: 0.4em; PADDING-LEFT: 0.4em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0.4em
+}
+.orange_rbroundbox {
+	WIDTH: 100%
+}
+#unsupported {
+	FONT-WEIGHT: bold; TEXT-ALIGN: left
+}
+#signupform TABLE {
+	BORDER-COLLAPSE: collapse; border-spacing: 0px; empty-cells: show
+}
+#signupform .label {
+	PADDING-RIGHT: 8px; VERTICAL-ALIGN: top; WIDTH: 125px; PADDING-TOP: 2px; WHITE-SPACE: nowrap; TEXT-ALIGN: right
+}
+#signupform .field {
+	PADDING-BOTTOM: 10px; WHITE-SPACE: nowrap
+}
+#signupform .status {
+	PADDING-LEFT: 8px; VERTICAL-ALIGN: top; WIDTH: 246px; PADDING-TOP: 2px; WHITE-SPACE: nowrap
+}
+#signupform .textfield {
+	WIDTH: 150px;
+
+}
+#signupform LABEL.error {
+
+	PADDING-LEFT: 16px; FONT-WEIGHT: bold; BACKGROUND: url(../images/unchecked.gif) no-repeat 0px 0px; PADDING-BOTTOM: 2px; COLOR: #oooo
+}
+#signupform LABEL.checked {
+	BACKGROUND: url(../images/checked.gif) no-repeat 0px 0px
+}
+#signupform .success_msg {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 19px; COLOR: #0060bf
+}
+#signupform #dateformatStatus {
+	MARGIN-LEFT: 6px
+}
+#signupform #termsStatus {
+	MARGIN-LEFT: 6px
+}
+#signupform #dateformat_eu {
+	VERTICAL-ALIGN: middle
+}
+#signupform #ldateformat_eu {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: middle
+}
+#signupform #dateformat_am {
+	VERTICAL-ALIGN: middle
+}
+#signupform #ldateformat_am {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: middle
+}
+#signupform #termswrap {
+	FLOAT: left
+}
+#signupform #terms {
+	DISPLAY: block; FLOAT: left; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 5px
+}
+#signupform #lterms {
+	DISPLAY: block; FONT-WEIGHT: normal; FLOAT: left; VERTICAL-ALIGN: middle; WIDTH: 350px; WHITE-SPACE: normal
+}
+#signupform #lsignupsubmit {
+	VISIBILITY: hidden
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title></title>
+			<link rel="stylesheet" href="media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						
+<!-- Start of Class Data -->
+<H2>
+	
+</H2>
+<h2>Root interface Session_SaveHandler_Interface</h2>
+<ul>
+<li><a href="Core/Session_SaveHandler_Interface.html">Session_SaveHandler_Interface</a></li></ul>
+
+<h2>Root class DataObject</h2>
+<ul>
+<li><a href="Core/DataObject.html">DataObject</a><ul>
+<li><a href="User/User.html">User</a></li></ul></li>
+</ul>
+
+<h2>Root class Functions</h2>
+<ul>
+<li><a href="Core/Functions.html">Functions</a></li></ul>
+
+<h2>Root class Loader</h2>
+<ul>
+<li><a href="Core/Loader/Loader.html">Loader</a></li></ul>
+
+<h2>Root class Session</h2>
+<ul>
+<li><a href="Core/Session.html">Session</a></li></ul>
+
+<h2>Root class Session_SaveHandler_Db</h2>
+<ul>
+<li><a href="Core/Session_SaveHandler_Db.html">Session_SaveHandler_Db</a></li></ul>
+
+<h2>Root class Exception</h2>
+<ul>
+<li><a href="Core/Loader/Loader_Exception.html">Loader_Exception</a></li><li><a href="Core/Session_Exception.html">Session_Exception</a></li></ul>
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 08 May 2010 23:24:43 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>

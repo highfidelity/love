@@ -1,0 +1,56 @@
+/***** Main Styles *****/
+body { margin: 0; padding: 0; font-family: Helvetica, Arial, sans-serif; font-size: 0.8em; background: #fff; overflow-y: hidden; }
+a:hover { text-decoration:none; }
+/*#content { margin: 0 10px; background: #fff; border: 1px solid #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }*/
+/***** Main Styles *****/
+/***** Action Area Styles *****/
+#sendloveForm { padding: 1px 0 0 10px; margin:0; }
+#sendloveForm fieldset { margin: 0; border: 0; padding: 0; }
+#labelto, #labelfor { width:30px; float:left; font-size:14px; }
+#labelto { padding-top:7px; }
+#labelfor { padding-top:16px; }
+#to, #for { border: 1.5pt solid #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; width: 300px; padding: 5px; }
+#to:hover, #for:hover { border-color:#000; }
+#to:focus, #for:focus { border-color:#CE0808; }
+
+div.sl_el_BMSUG { font-size:14px; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #CCC; position:fixed !important; background:#FFF; z-index:5000001; max-height:150px; overflow-y: auto;}
+div.sl_el_BMSUG { -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6); -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6); box-shadow: 0px 0px 5px rgba(0,0,0,0.6);}
+div.sl_el_BMSUG div {cursor: default; padding: 4px 3px 2px; } 
+div.sl_el_BMSUG div.current { background-color: #3366cc; color: white; }
+
+#for { width: 374px; font-size:20px; padding:15px 5px 10px 5px; }
+#submitButtons { margin-left:30px; }
+
+#sndLoveBtn, #sndLovePrvBtn, input[type="submit"] { padding:0 0 5px 0; margin: 0; background:#CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;	width: 132px; padding:12px 0 12px; font-size: 12px; text-transform: none; font-weight: bold; color:#2C3549; outline: none; overflow:hidden; border:0; }
+#sndLoveBtn:hover, #sndLovePrvBtn:hover, input[type="submit"]:hover { background:#EEE; color:#666; border: 1px solid #CCC; padding:10px 0 10px; }
+#sndLoveBtn:active, #sndLovePrvBtn:active, input[type="submit"]:active { background-position: 0 -50px; color:#2C3549; }
+#sndLoveBtn { margin-left: 80px; }
+#sndLovePrvBtn { margin-left: 30px; }
+
+form .counter{ font-size:14px; font-weight:bold; color:#ddd; position: absolute; z-index: 1001; right: 20px; top: 3px; }
+form .warning{color:#600;}
+form .exceeded{color:#e00;}
+
+/***** Action Area Styles *****/
+
+/***** Live validation Styles *****/
+.LV_valid , .LV_form_valid{ color:#6aa368; background-image: url(../images/checkedG.gif); background-repeat: no-repeat; background-position: left top; padding: 0 0 3px 20px; }
+.LV_invalid , .LV_form_invalid{ color:#d45955; background-image: url(../images/uncheckedR.gif); background-repeat: no-repeat; background-position: left top; padding: 0 0 3px 20px; }  
+.LV_validation_message{ font-weight:bold; margin:0 0 0 5px; }
+input.LV_valid_field, input.LV_valid_field:focus, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active, .fieldWithErrors input.LV_valid_field, .fieldWithErrors textarea.LV_valid_field { border: 2px solid #6aa368; }
+.LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active, .fieldWithErrors input.LV_invalid_field, .fieldWithErrors textarea.LV_invalid_field { border: 2px solid #d45955; }
+/***** Live validation Styles *****/
+
+
+/***** UI Toaster Styles *****/
+#ui-toaster-tr { z-index: 100; }
+.ui-toaster .ui-toaster-body div{ background: white; }
+.ui-toaster .ui-toaster-body div p{ margin: 0; padding: 0; }
+/***** UI Toaster Styles *****/
+
+#markletWelcome {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+

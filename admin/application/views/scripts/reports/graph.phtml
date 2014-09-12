@@ -1,0 +1,54 @@
+<div id="report-chart">
+    <div>
+        <label for="most loved users" > Most loved users </label><br/>
+        <label for="love-period-month" >Month</label>
+        <select name="love-period-month" id='love-period-month'>
+            <option value="0"> None </option>
+            <?php echo $this->reportHelper('month', $this->months); ?>
+        </select>
+        <label for="love-period-year" >Year</label>
+        <select name="love-period-year" id='love-period-year'>
+            <option value="0"> None </option>
+            <?php echo $this->reportHelper('year', $this->year); ?>
+        </select> 
+        <input type="button" value="Generate" id="update-most-loved" class="graph-generate" > 
+        <span id="error-love" class= "error"></span>
+    </div>
+    <div id="love-count-chart">	</div>
+    <!--<div id="rewarder-period">
+        <label for="rewarder" > Rewarder </label><br/>
+        <label for="rewarder-period-month" > Month</label>
+        <select name="rewarder-period-month" id='rewarder-period-month'>
+            <option value="0"> None </option>
+            <?php echo $this->reportHelper('month', $this->months); ?>
+        </select>
+        <label for="rewarder-period-year" >Year</label>
+        <select name="rewarder-period-year" id='rewarder-period-year'>
+            <option value="0"> None </option>
+            <?php echo $this->reportHelper('year', $this->year); ?>
+        </select> 
+        <input type="button" value="Generate" id="update-rewarder" class="graph-generate" /><br/>
+        <span id="error-rewarder" class= "error"></span>
+    </div> -->
+    <div id="love-distribution-period">
+        <label for="love-distribution" > Love Distribution</label><br/>
+        <label for="love-distribution-period-month" >Month</label>
+        <select name="love-distribution-period-month" id='love-distribution-period-month'>
+            <option value="0"> None </option>
+            <?php echo $this->reportHelper('month', $this->months); ?>
+        </select>
+        <label for="love-distribution-period-year" >Year</label>
+        <select name="love-distribution-period-year" id="love-distribution-period-year">
+            <option value="0"> None </option>
+            <?php echo $this->reportHelper('year', $this->year); ?>
+        </select> 
+        <input type="button" value="Generate" id="update-love-distribution" class="graph-generate"/><br/>
+        <span id="error-love-distribution" class= "error"></span>
+    </div>
+   <!-- <span id="rewarder-chart-title"><label>Rewarder</label></span>-->
+    <span id="love-distribution-chart-title"><label>Love</label></span>
+    <div class="clear"></div>
+   <!-- <div id="rewarder-chart"></div> -->
+    <div id="love-distribution-chart"></div>
+</div>
+

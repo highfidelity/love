@@ -1,0 +1,32 @@
+= How to run tests =
+Checkout login(logon) app from the repository.
+Then navigate your browser to the following url:
+http://dev.sendlove.us/~yoursandbox/login/tests/ui/
+OR
+http://dev.sendlove.us/~yoursandbox/login/trunk/tests/ui/
+depending on the way you checked out the app
+
+If everything is correct you should see this:
+
+If you are new to the testing, make sure that you click on the button Tests Info which provides you with basic understanding 
+on what each test does:
+
+To run a test unit you need to check the box in front of its name and the click on Run Selected.
+
+= How to write tests =
+
+Make sure that you read PHPUnit manual: http://www.phpunit.de/
+Open some of the tests and see how the tests are coded.
+The basics for a working tests class are:
+1. Make sure that you have included the bootstrap.php file
+2. Make sure that your test class extends PHPUnit_Framework_TestCase
+3. Put your test class in Tests folder and make sure that it follows the way the other tests are named - ClassNameTest.php
+4. Open the UI webpage and click on Reload Tests button to load your test:
+
+4. If you need to write additional "helper" classes for your test class, put them in a folder created in Tests. Name that folder 
+the same way as your test but don't include the extension(PHP), ClassNameTest, inside that folder you can put your helper classes.
+It is very IMPORTANT to put proper names on those helper classes - add Test infront at the beginning of the file name.
+Example:
+My class name is: MyHelperClass
+You need to put that class in a file named: TestMyHelperClass.php
+By doing that you are telling the UI script to not parse that file and not to include it to the list of tests.

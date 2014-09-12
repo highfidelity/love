@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # this is the base url the redirected file uses
+    # without this it tries to redirect based on pwd
+    # which doesn't fracking work as mod_rewrite still needs
+    # to redirect to a url
+    RewriteBase /
+    #RewriteBase /~sandbox/sendlove_taskid/love/js/
+
+
+    # This rule checks to see if the user is attempting to access
+    # a valid file, that exists and is not zero length
+    # missing files get redirected to generator.php
+    
+    # first we handle sandbox redirects
+    RewriteCond %{REQUEST_FILENAME} !-s
+    RewriteCond %{REQUEST_URI} (~[^\/]*)
+    RewriteRule (.*) /%1/love/generator.php?file=$1&sandbox=%1/ [L]
+
+    # then we handle non sandbox redirects
+    RewriteCond %{REQUEST_FILENAME} !-s
+    RewriteCond %{REQUEST_URI} ^[^~]
+    RewriteRule (.*) /love/generator.php?file=$1 [L]
+
+</IfModule>

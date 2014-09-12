@@ -1,0 +1,16 @@
+K 13
+svn:externals
+V 1
+
+
+K 10
+svn:ignore
+V 70
+.htaccess
+phpFMA*
+config.php
+db.version.php
+server.local.php
+uploads*
+
+END

@@ -1,0 +1,15 @@
+/***** Login Styles *****/
+.hTitle2 { margin-top:20px; margin-bottom:20px }
+#content-box { box-shadow: #999 0px 0px 15px; -webkit-box-shadow: #999 0px 0px 15px; -moz-box-shadow: 0 0 15px #999; }
+#contentBodyLeft { margin-left:20px; margin-right:20px; }
+#contentBodyRight { overflow: auto; margin:20px 20px 40px 20px; }
+#notice-title { font-weight:bold; margin-bottom:3px; }
+#security-notice { margin:0 20px 20px 10px; width: 430px; }
+#contentBodyFormLeft { float:left; width:45%; }
+#contentBodyFormRight { float:right; width:45%; }
+.fieldset { border:none; }
+#login, #gLogin { margin-left:15px; }
+#forgot-block { float: left; }
+#forgot-block div { float: left; margin-right: 30px; }
+/***** Login Styles *****/
+

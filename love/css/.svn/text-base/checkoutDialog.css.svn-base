@@ -1,0 +1,28 @@
+#checkoutAdminEmailAddress {
+    width:510px;
+}
+#checkoutContactPhone {
+    width:160px;
+}
+#checkoutComment {
+    width:510px;
+    height:60px;
+}
+
+
+#buylovemachine div.group {
+    margin-top:10px;
+}
+
+#buylovemachine span.title {
+    font-weight: bold;	
+}
+#buylovemachine .buttons{
+    text-align: center;
+}
+
+
+
+.checkoutTenant, .checkoutDatabase {
+    display:none;
+}

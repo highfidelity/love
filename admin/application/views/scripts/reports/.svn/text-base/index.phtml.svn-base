@@ -1,0 +1,50 @@
+<div id="reports">
+    <div id="statistics">
+        <h2>Statistics</h2>
+        <div id ="lreview">
+            <span>Love</span><span id="error-period" class="error"></span>
+            <table>
+                <tr>
+                    <td>
+                        <!-- <span>Period</span> -->
+                    </td>
+                    <td class="optional-filter">
+                        <!-- <span> Custom Period </span> -->
+                    </td>
+                    <td class="optional-filter">
+                        <!-- <label> Active Users </label> --><input type="checkbox" class="input-field" id="active-users" name="active-users" value="1" checked />
+                        <input type="hidden"  id="report-start-date" value="0" />
+                        <input type="hidden"  id="report-end-date" value="0" />
+                    </td>
+                    <td rowspan="2">
+                        <input type="button"  class="button" id="generate-report" value="Generate Report" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="review-period">
+                            <option value="0">None</option>
+                            <?php  echo $this->reportHelper('period',$this->periods); ?>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="start-date"> From </label>
+                        <input type="text" class="text-field-sm input-field" id="start-date" name="start_date" tabindex="1" value="" title="Start Date" size="8" />
+                        <label for="end-date"> to </label>
+                        <input type="text" class="text-field-sm input-field" id="end-date" name="end_date" tabindex="2" value="" title="End Date" size="8" />
+                    </td>
+                    <td class="optional-filter">
+                        <label> Weightage </label> <input type="text" class="input-field" id="weightage" name="weightage" value="1"  size="1"/>
+                    </td>
+                </tr>
+            </table>	
+        </div>
+    </div>
+    <div id="sub-tabs">
+        <ul>
+            <li><a href="<?php echo $this->baseUrl() ?>/reports/love">Love Details</a></li>
+           <!-- <li><a href="<?php echo $this->baseUrl() ?>/reports/rewarder">Rewarder Details</a></li>-->
+            <li><a href="<?php echo $this->baseUrl() ?>/reports/graph">Graphs</a></li>
+        </ul>
+    </div>
+</div>

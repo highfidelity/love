@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /love
+#RewriteBase /~sandbox/sendlove_taskid/love
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ user.php?user=$1

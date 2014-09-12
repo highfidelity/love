@@ -1,0 +1,97 @@
+<?php
+//
+//  Copyright (c) 2009, LoveMachine Inc.
+//  All Rights Reserved. 
+//  http://www.lovemachineinc.com
+//
+
+// These are the items most likely in need of being changed.
+
+// require_once("/mnt/ebsvol/cluster/www/htdocs/bootstrap.php");
+define('SANDBOX_URL_BASE','/~user/sendlove_#jobid');
+global $cupid_arrays;
+
+
+// Change this to something private to deter funny business
+
+
+//Server URL's - If running as http://host.domain.com/ (not using app location), defining SERVER_NAME is all that is needed for non-ssl sites
+//define("SERVER_NAME","dev.sendlove.us");
+//define("APP_LOCATION",substr($_SERVER['SCRIPT_NAME'], 1, strrpos($_SERVER['SCRIPT_NAME'], "/")));
+//define("SERVER_URL",'http://'.SERVER_NAME.'/'.APP_LOCATION); //Include [:port] for standard http traffic if not :80
+////SSL Not enabled on development
+////define("SECURE_SERVER_URL",'https://'.SERVER_NAME.'/'.APP_LOCATION); //Secure domain defaults to standard; Include [:port] for secure https traffic if not :443
+////So clone the standard URL
+//define("SECURE_SERVER_URL",SERVER_URL); //Secure domain defaults to standard; Include [:port] for secure https traffic if not :443
+
+
+
+//Define configured email methods. localhost/noauth is the default
+
+//Example config for restricting signups to users within a set of predefined domains.
+$signup_domains = array('lovemachineinc.com');
+
+//Example added for SSL+Authentication for authsmtp user
+//Example added for SSL+Authentication for gmail.com user
+//Example added for nonSSL Authentication for securedomain.com
+//Example added for SSL+Authentication for out of band (test) gmail.com user
+if (isset($cupid_arrays) && array_key_exists('mail_auth',$cupid_arrays)) {
+$mail_auth=$cupid_arrays['mail_auth'];
+//error_log("using autoconfig mail_auth");
+} else {
+//error_log("using server.local.php mail_auth");
+$mail_auth = array (
+  'localhost' => array (
+    'host' => 'localhost',
+    'auth' => false
+    ),
+  'authsmtp' => array (
+    'host' => 'mail.authsmtp.com',
+    'port' => 2525,
+    'username' => 'authsmtpuser',
+    'password' => 'authsmtppassword',
+    'auth' => true
+    ),
+  'securedomain' => array (
+    'host' => 'smtp.gmail.com',
+    'username' => 'user@gmail.com',
+    'password' => 'password',
+    'auth' => true
+    ),
+  'gmail-ssl' => array (
+    'host' => 'ssl://smtp.gmail.com',
+    'port' => '465',
+    'username' => 'user@gmail.com',
+    'password' => 'password',
+    'auth' => true
+    ),
+  'gmail-test' => array (
+    'host' => 'ssl://smtp.gmail.com',
+    'port' => '465',
+    'username' => 'user@gmail.com',
+    'password' => 'password',
+    'auth' => true
+    )
+  );
+}
+    
+//Define email From username and display names for sent messages (for example, only registered emails are permitted to send through some gateways)
+//This should degrade to the first array if the specific name does not exist. you could just pass a live array or set $headers['From'] before calling.
+//In most cases this simply requires changing $header('Content-Type: ....') to $header['Content-Type'] and making sure the header builder creates the plaintext version correctly. (to degrade to php mail() if PEAR:Mail not available)
+if (isset($cupid_arrays) && array_key_exists('mail_user',$cupid_arrays)) {
+//error_log("using autoconfig mail_user");
+$mail_user=$cupid_arrays['mail_user'];
+} else {
+//error_log("using server.local.php mail_auth");
+$mail_user = array (
+  'authuser' => array (
+    'from' => 'SendLove <love@sendlove.us>',
+    'replyto' => 'SendLove <love@sendlove.us>',
+    ),
+  'smsuser' => array (
+    'from' =>  'SendLove SMSReply <sms-test@sendlove.us>',
+    'replyto' => 'SendLove SMSReply <sms-test@sendlove.us>'
+    )
+  ); 
+}
+

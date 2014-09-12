@@ -1,0 +1,100 @@
+LoveMachine Administration Application
+ - Specification Guide -
+ 
+1st. All files should contain the LoveMachine header at the begining
+    
+    //
+    //  Copyright (c) 2009, LoveMachine, LLC
+    //  All Rights Reserved. 
+    //  http://www.lovemachineinc.com
+    //
+    
+2nd. Files & Folders organization and purpose
+
+  - Root documents should be reserved for initialization,
+    login, index and main pages such as privacy and so, that
+    are pages that are completly independent.
+    
+  - Index: Is the main application, it loads it's modules,
+    from views folder, and knows which views to load based
+    on the views/views.php file that includes all views we
+    want to load.
+    
+  - Views folder: Stores the main view (interface) components
+    of the parts of Admin. The views.php file acts as a registry
+    of what views are available to load.
+    
+  - Modules folder: Stores the logic part of each component of
+    Admin, so the view has the UI, and calls the module to get
+    the actual data. (All modules must work in a OOP way, classes
+    named after the file name, i.e.: company -> class Company.
+    When this modules have to call an application, like Love to
+    get or set data, they must have a "interface" that lives on
+    interfaces folder, that will handle this part.
+    
+    Also third-party libs and other files such as email related
+    functionallity will live here.
+  
+  - Interfaces folder: Stores the files that "interface" with other
+    applications in order to send and retrieve data. Again all
+    interfaces must be classes.
+    
+  - JS folder: Stores the javascript functionality related to each
+    of the views in Admin, with one shared part that is admin.js
+    common functionality should be placed there. 
+    This has a on-deploy-compilation that is transparent when you
+    develop on your sandbox, but on production we use a combined
+    and minimized version of all the js files, so be sure to check
+    it works correctly once deployed.
+    IMPORTANT: If keep in mind javascript files should always be
+    loaded at the bottom of the page.
+    
+  - CSS folder: Stores all the styles used on the Admin app, again
+    it has a global admin.css for the whole application, and styles
+    individual to each view should have the view_name.css.
+    IMPORTANT: all CSS files have to be added on the head section.
+    
+  - Images folder: All images used in the Admin app will live here,
+    there will be a admin.png file that's a sprite of all images.
+    So when you add a new image, you have to add it to the Images
+    folder, and insert it into the admin.png sprite, and use the sprite
+    with background-position to adjust. That's a requirement.
+    
+ 3rd. Javascript autocompilation
+ 
+   - On deploy a script "join_js.sh" runs and begins joining the js
+     files starting by admin.js and then the rest. And then minimizes
+     the code. For this to work transparently for the developer, we
+     add a check on index.php that "if on sandbox" loads the normal js
+     files in the right order admin.js and the rest. The scripts will
+     be auto loaded from their location on js folder without more interaction
+     from the developer.
+     
+ 4th. API
+ 
+   - Admin app will have an api located in app_root/api.php this api is
+     a REST service where you can do calls to set / get info from the diverse
+     parts of admin. So when you code a new "module" you must add the appropiate
+     api calls to api.php so we can keep it updated at all times and highly 
+     accessible.
+
+     Think we are trying to be highly modular in our design so we can add parts
+     and functionality as we see fit, think accordingly.
+     
+ 5th. Remarks
+ 
+   - No needed to say, comment all your code, the more the better (this will be
+     checked on code reviews and if it's not commented enough it won't pass).
+     
+   - Follow the coding guidelines, extrictly, don't mix php and html tags on
+     ugly and hard to follow mixed if blocks, if necessary "echo" the html code.
+     
+   - Don't mix style difinition in the html side.
+   
+   - Don't add extra javascript code to the views, instead use it's own js file on
+     the js folder.
+     
+   - Follow the sprites rule for adding new images, using a single one for testing
+     during development is fine, but be sure to put it on the sprites "admin.php"
+     file before deploy.
+ 

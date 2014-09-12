@@ -1,0 +1,147 @@
+.ui-helper-hidden-accessible {
+    top: -300px;
+}
+
+/*button css*/
+
+input[type="submit"], .periodButton {
+    margin: 2px;
+    background:#CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	width: auto;
+	padding:6px;
+	font-size: 12px;
+    text-transform: none;
+    font-weight: normal;	
+    color: #000;
+    outline: none;
+    overflow:hidden;
+    border:0;
+}
+input[type="submit"]:hover,.periodButton:hover {
+    background:#EEE;
+    color:#666;
+    border: 1px solid #CCC;
+	padding:4px 5px;
+}
+input[type="submit"]:active,.periodButton:active {
+    background-position: 0 -50px;
+    color:#2C3549;
+}
+
+a.moreOptionsLink:link,a.moreOptionsLink:visited ,a.moreOptionsLink:hover,a.moreOptionsLink:active{  
+    color:#000000; 
+}      
+
+input.simulation {
+    margin-left:30px;
+}
+
+#periods_campaign { padding:0px;}
+
+#periods_campaign_listPeriods  .ui-row-ltr{
+    cursor:pointer;
+}
+
+#periods_campaign_listPeriods  tr.ui-row-ltr td {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;    
+}
+
+#periods_campaign  .mainButtonsArea {
+    margin: 10px 10px 10px 40px;
+}
+#periods_campaign  .ui-jqgrid {
+}
+
+#periods_campaign  .moreArea {
+    margin-left:30px;
+}
+#periods_campaign  .hiddenOptions {
+    display:none;
+    padding:10px;
+}
+#periods_campaign .radioArea {
+    text-align: left;
+}
+#simulationTopPercInput,#simulationTopNumInput , #simulationFloorInput{
+    width:20px;
+}
+
+#periods_campaign input.buy_budget_validated_no,
+#periods_campaign input.buy_budget_validated_running {
+    font-size: 0.9em;
+    margin: 0 0 0 0.4em;
+    padding: 0;
+}
+
+#periods_campaign input.change_budget_validated_running,
+#periods_campaign input.change_budget_validated_no {
+    margin: 0 0 0 0.1em;
+}
+
+#periods_campaign #timeline-graph {
+    width: auto;
+    margin-top: 1em;
+}
+/***
+Redeem CSS styles
+***/
+
+.redeemTotalArea {
+    display: none; /* Could be removed later */
+    margin-left:auto;
+    margin-right:auto;
+    width:250px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.redeemTotalArea  .totalLeft{
+    clear:both;
+    float:left;
+    margin:4px;
+}
+.redeemTotalArea  .totalRight{
+    float:right;
+    margin:4px;
+}
+
+.redeemButtonArea {
+    position: relative; 
+    left: 260px; 
+    top: -25px;
+}
+
+.redeemSuccessfullySent {
+    color: green;
+    display:none;
+    text-align: center;
+}
+#info_table_update {
+    color:green;
+}
+#gbox_periods_redeem_listPeriods{
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+}
+
+.api_for_debug {
+    display: none;
+}
+
+.api_for_debug_show {
+    display:inline;
+}
+
+#content { 
+	border-width: 0px;
+	-moz-box-shadow: 0 0 0px #FFFFFF;
+}
+
+.periodExport {
+    display: none;
+}

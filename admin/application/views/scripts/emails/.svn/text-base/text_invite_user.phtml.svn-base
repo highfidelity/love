@@ -1,0 +1,6 @@
+<?php echo $this->invitor_nickname ?> (<?php echo $this->invitor_email ?>) has invited you to join <?php echo $this->company_name ?> on SendLove.
+To accept this invitation click the link below:
+	<?php echo $this->url ?>
+	
+Love,
+SednLove

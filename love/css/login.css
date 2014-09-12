@@ -1,0 +1,300 @@
+body {
+	background:url("../images/bg-swirls.png") repeat-x fixed 50% 450px #F6F4FF;
+	font-size:.8em;
+	font-family:Helvetica,Arial,sans-serif;
+}
+*{ outline: none; }
+
+a, a:hover, a:active, a:visited {color:#CE0808;}
+
+/* 
+/
+/       Fonts
+/
+*/
+h2 {font-size: 130%;
+    color:#333 !important;
+}
+h3 {
+    color:#333;
+    font-size: 120%;
+}
+h4 {font-size: 110%
+    color:#333 !important;
+}
+
+.hTitle {
+    float:left;
+    font-size: 36px !important;
+}
+
+.hTitle2 {
+    margin-top:20px;
+    margin-bottom:20px
+}
+
+/*
+ * Buttons
+ */
+input[type="button"] {
+    padding:0 0 5px 0;
+    min-width:120px;
+    margin: 0;
+    background:#CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	padding:12px;
+	font-size: 12px;
+    text-transform: none;
+    font-weight: bold;	
+    color: #333;
+    outline: none;
+    overflow:hidden;
+    border:0;
+}
+input[type="button"]:hover {
+    background:#EEE;
+    color:#666;
+    border: 1px solid #CCC;
+	padding:11px;
+}
+input[type="button"]:active {
+    background-position: 0 -50px;
+    color:#2C3549;
+}
+
+.button {
+    padding:0 0 5px 0;
+    min-width:120px;
+    margin: 0;
+    background:#CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding:12px;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: bold;  
+    color: #333;
+    outline: none;
+    overflow:hidden;
+    border:0;
+}
+
+.button:hover {
+    background:#EEE;
+    color:#666;
+    border: 1px solid #CCC;
+    padding:11px;
+}
+
+.button:active {
+    background-position: 0 -50px;
+    color:#2C3549;
+}
+
+.input{
+    float: left !important;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom:3px;
+    width: 230px;
+    border: 1.5pt solid #D1CFCF;
+    font-size: 12px  !important;
+    padding: 5px !important;
+}
+
+input[type=password]:hover, 
+input[type=text]:hover,
+textarea:hover{
+    border-color: #000000;
+}
+input[type=password]:focus,
+input[type=text]:focus,
+textarea:focus {
+    border-color: #CE0808; 
+}
+
+/* 
+/
+/		Wrapper
+/
+*/
+div#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+/* 
+/
+/		Header
+/
+*/
+div#header .title {
+	float: left;
+}
+div#header .logo {
+	float: right;
+	height:100px;
+	width:auto;
+}
+/* 
+/
+/       Footer
+/
+*/
+div#footer p {
+    text-align: center;
+    color: #333;
+    font-size:11px;
+    font-weight:bold;
+}
+/* 
+/
+/		Utils
+/
+*/
+.clear {
+	clear: both;
+}
+
+#content {
+  width: 990px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #CCC;
+  -webkit-box-shadow: 0px 0px 15px #999;
+  -moz-box-shadow: 0px 0px 15px #999;
+  box-shadow: 0px 0px 15px #999;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+  /**
+   * Validation styles
+   */
+.LV_valid {
+  color:#6aa368 !important;
+  background-image: url(../images/checkedG.gif);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 0 0 3px 20px;
+}
+
+.LV_invalid {
+  color:#d45955;
+  background-image: url(../images/uncheckedR.gif);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 0 0 3px 20px;
+}
+  
+.LV_validation_message{
+    font-weight:bold;
+    margin: 5px 0 0 5px;
+    display:block;
+    float: left;
+    width: 95%;
+}
+    
+input.LV_valid_field,
+input.LV_valid_field:focus,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active,
+.fieldWithErrors input.LV_valid_field,
+.fieldWithErrors textarea.LV_valid_field {
+    border: 2px solid #6aa368;
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active,
+.fieldWithErrors input.LV_invalid_field,
+.fieldWithErrors textarea.LV_invalid_field {
+    border: 2px solid #d45955;
+}
+
+/* login.php style */
+#contentBodyLeft {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#contentBodyRight {
+    overflow: auto;
+    margin:20px 20px 40px 20px;
+}
+
+#contentBodyFormLeft {
+    float:left;
+    width:45%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#contentBodyFormRight {
+    float:right;
+    width:45%;
+}
+
+.fieldset {
+    border:none;
+    padding: 0;
+}
+
+#login {
+    margin: 15px 20px 0 0;
+    float: right;
+}
+
+#gLogin {
+    margin-left: 15px;
+}
+
+#forgot-block {
+    float: left;
+}
+
+#forgot-block div {
+	float: left;
+	margin-right: 30px;
+}
+
+#tagline{
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#tagline2 {
+    float:left;
+    color: #888888;
+    font-style: italic;
+}
+
+/* forgot.php style */
+#send {
+    margin-left:15px;
+}
+
+.ui-dialog { box-shadow: #999 0px 0px 15px; -webkit-box-shadow: #999 0px 0px 15px; -moz-box-shadow: 0 0 15px #999; }
+
+#messageDialog input { margin-top: 3px; padding: 2px;}
+#messageDialog ui-button { padding: 0; }
+#messageDialog span { background-position: 70px 5px; clear: both; font-size: 11px; text-align: left; text-indent: 70px; }
+.logo_footer { border: none; width:70px;}

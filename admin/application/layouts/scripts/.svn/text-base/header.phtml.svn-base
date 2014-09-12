@@ -1,0 +1,20 @@
+<div class="title">
+	<div id="welcome-box">
+		<div id="avatar-box">
+		   <img id="avatar-pic" src="<?php echo $this->userHelper()->getUserPicture() ?>" width="50" height="50" alt="User Picture"/> 
+		</div>
+		<div id="userInfo">
+		   <div class="hTitle">Control Panel</div><br/>
+		   <div class="clear"></div>
+		   <span>Welcome<?php echo $this->userHelper()->getUserNickname() ?>!</span>
+		   <?php if ($this->userHelper()->isLoggedIn()) : ?>
+		   		<span> &nbsp;| &nbsp;<a href="<?php echo $this->baseUrl() ?>/login/logout">Logout</a> </span>
+		   <?php endif; ?>
+		   <span> &nbsp;| &nbsp;<a href="/love/">Back to SendLove</a> </span>
+		</div>
+	</div>
+</div>
+<div class="logo">
+	<img id="logo_img" src="images/blank.gif" alt="Company Logo" />
+</div>
+<div class="clear"></div>

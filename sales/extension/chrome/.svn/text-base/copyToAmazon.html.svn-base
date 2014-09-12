@@ -1,0 +1,47 @@
+<style>
+body {
+  min-width:357px;
+  overflow-x:hidden;
+}
+
+img {
+  margin:5px;
+  border:2px solid black;
+  vertical-align:middle;
+  width:75px;
+  height:75px;
+}
+</style>
+ <script src='jquery-1.4.2.js'></script>
+
+<script>
+
+var sendToAmazon = function(request,fAfter) {
+    chrome.tabs.getSelected(null, function(tab) {
+      chrome.tabs.sendRequest(tab.id, request, function(response) {
+        debugAlert("sendToAmazon in copyToAmazon.html "+response.answer);
+        if (fAfter) fAfter(response);
+      });
+    });
+},
+    debugAlert = function(mes) {
+        //alert(mes);
+    };
+
+
+chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+    var mes = sender.tab ?
+                "from a content script:" + sender.tab.url :
+                "from the extension";
+    debugAlert("copyToAmazon "+mes+"* action:"+request.action+"* aRedeemInfo:"+request.aRedeemInfo);
+    if ( request.action== "toAmazon" && request.aRedeemInfo ) {
+        sendToAmazon(request,function(redeemInfoReturned){
+            sendResponse(redeemInfoReturned);
+        });
+    } else {
+        alert("invalid request");
+    }
+});
+  
+
+</script>

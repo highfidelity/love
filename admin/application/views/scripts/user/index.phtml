@@ -1,0 +1,53 @@
+<h2>Add User</h2>
+<p>Your users will receive their login information via email as soon as you add them to the system.</p>
+<div id="user_add">
+	<div class="leftcolumn">
+		<p>Add co-worker</p>
+		<input type="text" id="invite_coworker" class="input" name="invite_coworker" />
+		<input type="button" value="Add" id="invite-btn" />
+	</div>
+	<div class="rightcolumn">
+		<p>Upload CSV file with email addresses</p>
+		<input type="button" id="upload-csv-btn" value="Upload File" />
+		<div id="csv-label-box">
+		  <span id="csv-label">
+			  The CSV file should be formatted in the following way:<br/>
+			  "emails"<br/>
+			  "email1@company.com"<br/>
+			  "email2@company.com"<br/>
+		  </span>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<div id="status-box">
+    <span id="status-msg"></span>
+</div>
+
+<h2>Assign User Roles</h2>
+
+<div id="user_assign_roles" class="noSelect">
+	<p>Select users and click the role they should have, click the gear icon to set specific settings.</p>
+	<div id="container-users">
+        <span class="headers">All Users (Search in the field below)</span><br/>
+        <div id="user-search">
+            <input id="search-box" type="text" class="input"/><div id="clean-search" class="sprite sprite-cross"></div>
+        </div>
+        <div class="clear"></div>
+        <div id="all-users"></div>
+    </div>
+    <div id="user-actions">
+        <input id="make-user-admin" type="button" value="Administrator"/><br/>
+        <input id="make-user-auditor" type="button" value="Auditor"/><br/>
+        <input id="unselect-all" type="button" value="Unselect All"/>
+    </div>
+    <div id="container-admins">
+        <span class="headers user-admins">Administrators</span><br/>
+        <div id="user-admins" class="user-admins"></div>
+    </div>
+    <div id="container-auditors">
+        <span class="headers user-auditors">Auditors</span><br/>
+        <div id="user-auditors" class="user-auditors"></div>
+    </div>
+</div>

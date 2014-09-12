@@ -1,0 +1,20 @@
+/***** Branding styles *****/
+#company_branding .leftcolumn { float:left; width:40%; }
+#company_branding .rightcolumn .appearance_left { float:left; width:250px; }
+#company_branding .leftcolumn h3, #company_branding .rightcolumn h3 { margin-top:0; }
+#company_branding .leftcolumn img { float:left; margin-right:10px; margin-bottom: 10px; }
+#company_branding .rightcolumn { float:right; width:55%; } 
+#company_branding .rightcolumn .appearance_right { float:right; width:220px; }
+#company_branding .appearance_color, #company_branding .apperance_font { line-height: 25px; }
+#company_branding .appearance_color div { float:left; height:15px; width:15px; margin:5px 5px 5px 0; }
+#company_branding .background_image li { list-style-type: none; margin: 5px; }
+.background_image ul { padding-left: 0; }
+#background_image { width: 180px; height: 100px; background-repeat: no-repeat; }
+#background_tile_options { display: none; padding: 20px; }
+#bgUploadTrigger { padding: 0; }
+
+#theme_dropdown { float:right; }
+#new_theme_name { width:180px; float:left; }
+#save_theme_btn { float:right; }
+div#remove_theme_btn { float: right; margin-top: -1px; cursor: pointer; }
+/***** Branding styles *****/

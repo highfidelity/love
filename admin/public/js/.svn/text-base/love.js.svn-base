@@ -1,0 +1,3 @@
+var love = {
+    init: function() {}
+}

@@ -1,0 +1,77 @@
+.ui-widget-header {
+    background: none;
+}
+
+#content > .ui-widget-content {
+    border: 0px none;
+    background-color: transparent; 
+    background-image:none;     
+    -webkit-border-radius: none; 
+    border-radius: none; 
+    -moz-border-radius: none; 
+}
+
+#content {
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none; 
+    box-shadow: none; 
+    -moz-border-radius: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0px;
+    background: none repeat scroll 0 0 transparent;
+}
+
+.ui-tabs  .ui-tabs-panel{
+    -webkit-border-radius: 0px 5px 5px 5px;
+    -moz-border-radius:0px  5px 5px 5px;
+    -moz-box-shadow:0 0 15px #999999;
+    -webkit-box-shadow:0px 0px 15px #999;
+    box-shadow:0px 0px 15px #999;
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding:1px;
+    margin: 1px;
+}
+
+
+.ui-tabs .ui-tabs-nav {
+    background:none repeat scroll 0 0 transparent ;
+    font-size:18px;
+    -moz-padding-start:0px;
+    padding: 0px;
+}
+
+.ui-tabs  {
+    padding: none;
+}
+
+#footer {
+    background:none repeat scroll 0 0 transparent ;
+    border: 0px;
+    border-top: 1px solid gray;
+}
+
+#companyUserSwitch {
+    margin-left:-121px;
+}
+
+#companyUserSwitch a{
+    padding: 15px 20px 15px 5px;
+}
+
+#mainActionArea {
+    margin: 0px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    -moz-border-radius:5px  5px 0px 0px;
+    border-right:1px solid #CCCCCC;
+    border-top:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+}
+.ui-state-default {
+    background: none repeat scroll 0 0 #CCCCCC;
+}
+.ui-state-active {
+    border: 1px solid #D3D3D3;
+}

@@ -1,0 +1,70 @@
+/**
+ * Header styles
+ * File: view/settings/header.php
+ */
+#average { margin-left: 20px; }
+/**
+ * Content styles
+ * File: view/settings/content.php
+ */
+.show { display: block; }
+.hide { display: none; }
+#contentBodyRight { padding-top: 0px; }
+#nav a { color: #6F6F6F; font-weight: bold; text-decoration: none; }
+#nav a:hover { color: #98AAB2;}
+
+#settings { padding: 20px 20px; }
+#settings form input,select { border: 1.5pt solid #cccccc; clear: left; display: block; margin: 5px; padding: 5px; width: 200px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#settings form label { clear: both; display: block; margin-top: 10px; }
+#settings form input:hover { border: 1.5pt solid #000000; }
+#settings form input:focus { border-color: #CE0808; }
+#settings form input[type=checkbox] { float: left; width: 15px; border: 0; }
+#settings #country { width: 160px; float: left; display: inline; }
+#settings #phone { width: 90px; float: left; clear: none;}
+#settings #provider { width:274px; }
+
+#settings .column { width: 300px; float: left;}
+#settings .fieldset { border: none; }
+
+
+.settingsbutton {
+	height:15px;
+	border: 1.5pt solid #cccccc;
+	color: #2C3549;
+	text-align:center;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #cccccc;
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.settingsbutton:hover {
+	background-color: #EEEEEE;
+	color: #6F6F6F;
+	border: 1.5pt solid #000000;
+	cursor: pointer;
+}
+
+#synclinkedin:focus { border-color: #CE0808; }
+#linklogo {padding-bottom: 7px; padding-left:2px; padding-top: 3px;}
+
+#avatar { float: right; width: 200px !important; }
+#avatar label { display: block; text-align: left; }
+#avatar img { padding: 10px; margin: auto; }
+.picture_info { display: block; cursor: pointer; cursor: hand; margin: 3px; text-align: center; }
+#profilepicture { border: 2px solid #ccc; cursor: hand; cursor: pointer; display: block; width: 140px; height: 130px; margin: auto; }
+
+#allow_email_sendlove,#allow_email_sendlove:hover { border: 0; }
+#footer { border: none !important; }
+.required-bullet { float: right; color: #ff0000; font-size:; margin-right: 20px; font-size: 20px; }
+#ajaxresponse { padding: 20px; display: none; float: right; text-align: right;  }
+
+#send-test { display: block; float: right; margin-right: 20px; }
+
+#update { margin: 20px auto !important; }
+#delete { margin: 10px; display: none !important; }
+
+div.loading { background: url(/love/img/tooltip/spinner.gif) no-repeat center center; }

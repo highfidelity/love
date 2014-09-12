@@ -1,0 +1,646 @@
+/***** Main Styles *****/
+*{outline: none;}
+.state_modemulti {
+	font:18px 'Fontin Sans',Fontin-Sans,sans-serif;
+	font-weight: bold;
+	border-bottom: 1px solid #C0C0C0;
+	margin-bottom: 5px;
+	line-height: 50px;
+	}
+#love-checkbox, #comment-checkbox, #peer_checkbox {
+	float: right;
+	height: 50px;
+	margin-top: -3px;
+	width: 50px;
+	}
+.selector-holder > div {
+	width:280px;
+	height:30px;
+	float:left;
+	} 
+.selector-holder {
+	height: 50px;
+	position: relative;
+	width:330px;
+	margin:50px auto 0;
+	} 
+.iconsListElement {
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background-repeat:none;
+	background-image:url("../images/icons_list.png");
+	position:relative;
+	top:0px;
+	}
+.PeriodLoadergifContainer {
+	display:table;
+	margin-top:15px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.errorInReview {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 20px;
+	width:500px;
+	height:40px;
+	}
+.rewarderGraphHelp {
+	margin:5px;
+	overflow: auto;
+	height:130px;
+	}
+
+.tipsy {
+	border-radius:10px 10px 10px 10px;
+	box-shadow:0 2px 5px #000000;
+	-moz-border-radius:10px 10px 10px 10px;
+	-moz-box-shadow:0 2px 5px #000000;
+	-webkit-border-radius:10px 10px 10px 10px;
+	-webkit-box-shadow:0 2px 5px #000000;
+	background:none repeat scroll 0 0 white;
+	border:3px solid #CCCCCC;
+	padding:5px 10px;
+	position:absolute;
+	text-align:left;
+	width:500px;
+	}
+#rewarder-div {
+	position: relative;
+	font-size: 12px;
+	}
+#review-tabs {
+	border: none;
+	}
+#timeline-graph {
+    height:340px;
+    width:96%;
+    overflow-x: auto;
+}    
+/* Caption telling the status of review */
+.review-message {
+	display: none;
+	font-size: 3em;
+	margin: 50px auto 50px auto;
+	}
+.love-comment-text {
+	color:#000000;
+	display:block;
+	float:left;
+	padding-top:5px;
+	padding-left:5px;
+	}
+/***** Main Styles *****/
+
+
+/***** Periods selector *****/
+#reviewPeriodTitle, .your_review , .reviewPeriodTitle {
+	font:20px 'Fontin Sans',Fontin-Sans,sans-serif;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	text-decoration: underline;
+	}
+#your-review {
+	margin-top: 10px;
+	}
+.carousel-holder {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:330px;
+	}
+.carousel > div {
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	}
+.prev-period, .next-period {
+	float:left;
+	width:24px;
+	height:24px;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	}
+.prev-period  div.iconsListElement {	background-position:-24px 0;
+	}
+.next-period  div.iconsListElement {	background-position:-48px 0;
+	}
+.scroll.disabled {
+	cursor: default;
+	opacity: 0.5;
+	}
+.period-title {
+	padding: 0 0 5px 0;
+	font-size: 30px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+.closing-date {
+	text-align: center;
+	clear: both;
+	}
+.closing-date.far {
+	color: green;
+	}
+.closing-date.middle {
+	color: red;
+	}
+.closing-date.soon {
+	color: red;
+	}
+/***** Periods selector *****/
+
+
+/***** Pie chart *****/
+#self_pie_chart,#peer_pie_chart {
+	float: right;
+	width: 230px;
+	height: 210px;
+	margin-right: 50px;
+	overflow:hidden;
+	}
+#holder {
+	position: relative;
+	}
+/***** Pie chart *****/
+
+
+/***** Wizard text and progress bar *****/
+#wizard-div {
+	text-align:center;
+	height: 110px;
+	}
+#wizard-text-holder {
+	display: table-cell;
+	vertical-align: middle;
+	height: 110px;
+	width: 575px;
+	}
+#wizard-text {}
+#wizard-progress-holder {
+	position: absolute;
+	bottom: 0;
+	left: 87.5px;
+	width: 200px;
+	}
+#wizard-progress {
+	position: relative;
+	margin: 0 auto 0 auto;
+	}
+#wizard-progress .top-left {
+	left: 0;
+	}
+#wizard-progress .top-right {
+	right: 0;
+	}
+#wiz-percentage-holder, #wizard-text {
+	font-size: 1.2em;
+	}
+#progress-bar {
+	border: 1px solid #CCC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 20px;
+	}
+#progress-bar-fill {-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #FF3366;
+	width: 0%;
+	height: 100%;
+	}
+.wizard-pick-more {
+	margin-top: 10px;
+	font-size: 1.4em;
+	display: none;
+	}
+#wizard-floater {
+	position: fixed;
+	left: 5px;
+	top: 5px;
+	background: white;
+	border: 1.5pt solid #CCCCCC;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 1000;
+	display: none;
+	}
+#wizard-floater-content {
+	position: relative;
+	text-align: center;
+	padding: 5px 5px 40px 5px;
+	}
+#hide-floater, #wizard-floater .next {
+	float: right;
+	}
+/***** Wizard text and progress bar *****/
+
+
+/***** Right side stats *****/
+.actionStats {
+	position:relative;
+	}
+#self_review_progress_holder,#peer_review_progress_holder, #no-data-holder {
+	position: absolute;
+	top: 0;
+	width: 370px;
+	height: 220px;
+	background: white;
+	display:none;
+	}
+#review-progress {
+	position: relative;
+	}
+#no-data {
+	margin: 50px auto 0 auto;
+	font-size: 1.5em;
+	text-align: center;
+	}
+.review_checkboxes {
+	display: table;
+	margin: 10px auto;
+	font-size: 1.3em;
+	width: 300px;
+	}
+.review_checkboxes span {
+	font-weight: bold;
+	}
+.review_checkboxes input[type="checkbox"] {
+	float: right;
+	}
+/***** Right side stats *****/
+
+/***** Review for user *****/
+#reviewforuser_search_reset {
+	display:inline-block;
+	}
+#reviewforuser_search_reset div.iconsListElement {
+	background-position:0px 0;
+	top:6px;
+	}
+#reviewforarea {
+	display: table;
+	margin-left: auto;
+	padding-right:12px;
+	}
+#reviewforuser {
+	border: 1.5pt solid #CCC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 300px;
+	padding: 5px;
+	}
+#reviewforuser:hover {
+	border-color:#000;
+	}
+#reviewforuser:focus {
+	border-color:#CE0808;
+	}
+#reviewforuser.showhint {
+	color: #CCCCCC;
+	font-style: italic;
+	}
+/***** Review for user *****/
+
+
+/***** Userlist *****/
+#userlist {
+	position: relative;
+	overflow:auto;
+	}
+#userlist ul {
+	list-style: none;
+	overflow:auto;
+	}
+#userlist ul li {
+	padding:10px;
+	float:left;
+	width:180px;
+	margin-left:30px;
+	}
+/***** Userlist *****/
+
+
+/***** User navigation *****/
+.listNav {
+	margin-top: 14px;
+	margin-bottom: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	position: relative;
+	}
+.ln-letters {
+	overflow:hidden;
+	}
+.ln-letters a {
+	font-size:1.7em;
+	display:block;
+	float:left;
+	padding:2px 6px;
+	border:1px solid silver;
+	border-right:none;
+	text-decoration:none;
+	}
+.ln-letters a.ln-last {
+	border-right:1px solid silver;
+	}
+.ln-letters a:hover, .ln-letters a.ln-selected {
+	background-color:#eaeaea;
+	}
+.ln-letters a.ln-disabled {
+	color:#ccc;
+	}
+.ln-letter-count {
+	text-align:center;
+	font-size:0.8em;
+	line-height:1;
+	margin-bottom:3px;
+	color:#336699;
+	}
+.done, .started {
+	cursor: pointer;
+	}
+/***** User navigation *****/
+
+
+/***** Review form *****/
+#reviewForm {
+	margin:0 30px;
+	}
+#review-form {
+	position: relative;
+	padding: 15px 0px;
+	}
+h1, .love-why {
+	font-size:1.6em;
+	}
+#form-content h1 {
+	text-align:center;
+	margin-bottom:1em;
+	padding-bottom:1em;
+	}
+#form-content {
+	position:relative;
+	background:#FFF;
+	padding:30px;
+	-webkit-box-shadow: 0px 2px 5px #666;
+	-moz-box-shadow: 0px 2px 5px #666;
+	box-shadow: 0px 2px 5px #666;
+	}
+#love-list {
+	color:#C0C0C0;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	}
+#add-love {
+	position:absolute;
+	left: 30px;
+	bottom: 30px;
+	}
+
+.love-from {
+	font-size: 1.5em;
+	font-style: italic;
+	color:#C0C0C0;
+	}
+.love-why {
+	font-size: 1.5em;
+	}
+.love-holder {
+	margin: 0em 0em 1em;
+	padding: 1em 0px 0em 24px;
+	position:relative;
+	line-height:1.3;
+	}
+.star {
+	position:absolute;
+	left:0;
+	top:19px;
+	}
+.hidden {
+	display: none;
+	}
+.favorite-why-holder {
+	margin-top:0.5em;
+	overflow:auto;
+	font-size:1.3em;
+	border-left:2px solid #E0E0E0;
+	padding-left:24px;
+	}
+.love-comment {
+	color:#888;
+	padding-top:5px;
+	display:block;
+	float:left;
+	}
+
+.love-holder textarea {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:1em;
+	margin: 0em 0 0 0.5em;
+	width: 85%;
+	border: solid 2px #FFF;	-moz-border-radius:7px;	-webkit-border-radius:7px;
+	border-radius:7px;
+	padding:4px 5px;
+	height:62px;
+	vertical-align:top;
+	background:#FFF;
+	}
+.love-holder textarea:hover {
+	border-color:#888;
+	background:#EFEFEF;
+	}
+.love-holder textarea:focus {
+	border-color:#000;
+	background:#EFEFEF;
+	}
+.favorite-why {
+	border: solid;
+	}
+
+#add-love-message {
+	padding: 0.5em;
+	text-align: center;
+	font-size: 1.4em;
+	}
+#love-left {
+	text-align: center;
+	font-size: 1.3em;
+	}
+.add-comment, .remove-comment {
+	font-style: italic;
+	}
+
+.buttons {
+	margin-top: 1em;
+	text-align: right;
+	}
+.buttons input[type="submit"] {
+	display: none;
+	}
+#publish {}
+/***** Review form *****/
+
+
+/***** User review popup *****/
+#user-popup {
+	font-size: 0.8em;
+	}
+.favorite-why-popup {
+	margin-left: 40px;
+	}
+.no-review {
+	text-align: center;
+	font-weight: bold;
+	}
+/***** User review popup *****/
+
+
+/***** Love popup *****/
+#detail h3 {
+	font-size:15px;
+	margin:0 0 15px;
+	padding:0;
+	}
+#detail table {
+	width: 100%;
+	}
+#detail table th {
+	padding: 5px;
+	}
+/***** Love popup *****/
+
+
+/***** User stats popup *****/
+#loves .review_period_title {
+	float: left;
+	width: 62%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	}
+#loves .review_user_stat {
+	float: right;
+	border-left:1px solid #888888;
+	padding-left: 5px;
+	}
+#loves .review_period_header {
+	clear: both;
+	height: 115px;
+	border-bottom:1px solid #888;
+	}
+.user_love_stat_period {
+	float: left;
+	width: 50%;
+	}
+.user_love_stat_period  div {
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	display: table;
+	}
+.user_love_stat_info {
+	float: right;
+	border-left:1px solid #888888;
+	padding-left: 5px;
+	width:48%;
+	}
+.user_love_stat_info_user_img {
+	float: left;
+	margin: 5px;
+	}
+.user_love_stat_info_user_stat {
+	float: right;
+	}
+.username_popup_review {
+	font-size: x-small;
+	}
+#user_love_stat {
+	border-bottom:1px solid #888888;
+	height:115px;
+	}
+.user_love_stat_info_user_stat .stat {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	}
+.user_love_stat_info_user_stat_company {
+	font-size: x-small;
+	}
+.love_user_received {
+	width: 150px;
+	}
+.love_user_unique_senders {
+	width: 150px;
+	}
+.love_user_received .number {
+	float: right;
+	}
+.love_user_received .title {
+	float: left;
+	}
+.love_user_unique_senders .number {
+	float: right;
+	}
+.love_user_unique_senders .title {
+	float: left;
+	}
+/***** User stats popup *****/
+
+
+/***** Love chooser *****/
+#love-selector table {
+	width: 100%;
+	}
+#love-selector .headWhen {
+	width: 15%;
+	} 
+/***** Love chooser *****/
+
+
+/***** Paginator styles *****/
+#tablePagination {
+	background-color: #DCDCDC;
+	font-size: 0.8em;
+	padding: 0px 5px;
+	height: 20px;
+	}
+#tablePagination_paginater {
+	margin-left: auto;
+	margin-right: auto;
+	}
+#tablePagination img {
+	padding: 0px 2px;
+	}
+#tablePagination_perPage {
+	float: left;
+	}
+#tablePagination_paginater {
+	float: right;
+	}
+
+tr.pagination {
+	background:#ffffff;
+	}
+tr.pagination td {
+	text-align:center;
+	}
+tr.pagination td a {
+	padding-left:3px;
+	}
+.center-text {
+	text-align: center;
+	}
+/***** Paginator styles *****/
+

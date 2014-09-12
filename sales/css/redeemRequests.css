@@ -1,0 +1,36 @@
+#tableRedeemRequests {
+    font-size: 10pt;
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+#tableRedeemRequests  td{
+    padding:3px;
+    border: 1px solid black;
+}
+
+#dialogForAmazon  div.ButtonArea {
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#tableRedeemRequests {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#periods_redeem  div.leftArea {
+    float:left;
+    width:450px;
+}
+#periods_redeem  div.rightArea {
+    float:right;
+}
+
+.api_for_debug {
+    display: none;
+}
+
+.api_for_debug_show {
+    display:inline;
+}

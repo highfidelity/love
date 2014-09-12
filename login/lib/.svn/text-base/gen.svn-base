@@ -1,0 +1,6 @@
+#!/usr/bin/php
+<?php
+require_once('Functions.php');
+
+$pass = $arvv[1];
+echo Functions::encryptPassword($pass)."\n";

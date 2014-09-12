@@ -1,0 +1,52 @@
+/* Fix bug for IE */
+#aboutlm { overflow:visible; }
+
+h1 {
+    //color:#876F6D;
+	color:#D10000;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+h3 {
+    color:#6F6F6F;
+    font-size: 15px;  
+}
+p {
+    line-height: 18px;
+    margin: 0px 0px 20px;
+    color: #333;
+    font-size: 13px;
+}
+
+a {
+	text-decoration:none;
+}
+
+#status-text, #status-update { float:left; }
+
+#waitIndicator, #readyIndicator, #errorIndicator {
+	margin-left:15px;
+    font-size: 15px;
+    font-weight:bold;
+    font-style:italic; 
+    text-decoration:none;
+}
+
+#readyIndicator, #errorIndicator:hover { text-decoration:underline; }
+
+#readyIndicator { color:#00ae00; }
+
+#errorIndicator { color:#00ae00; }
+
+#waitIndicator { color:#333; }
+
+#welcome-content {
+    background-color:#ffffff;
+    padding:20px;
+    -webkit-box-shadow: black 0px 0px 5px;
+    box-shadow: black 0px 0px 5px;
+    width:900px;
+    margin-left:8px;
+    margin-bottom:8px;
+}

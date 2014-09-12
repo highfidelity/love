@@ -1,0 +1,26 @@
+<?
+//admin:configs/api.ini
+defined('SERVER_NAME') or define('SERVER_NAME','lovemachine.testsendlove.us');
+defined('ADMIN_API_KEY') or define('ADMIN_API_KEY','1104b90e6f11179c2a92fbdd3f6dfcf9');
+defined('APP_LOGIN') or define('APP_LOGIN','/login/index.php/');
+defined('REVIEW_APP_API') or define('REVIEW_APP_API','/review/api.php');
+defined('REVIEW_API_KEY') or define('REVIEW_API_KEY','dhfsfdhgdhsfg7g5fyg73ff23545f32fwd');
+defined('LOVE_APP_API') or define('LOVE_APP_API','/love/api.php');
+defined('LOVE_API_KEY') or define('LOVE_API_KEY','uierbycur4yt73467t6trtycff3rt');
+
+//admin:configs/application.ini
+defined('LOVEMAIL') or define('LOVEMAIL', "lovemachine@sendlove.us");
+defined('UPLOAD_PATH') or define('UPLOAD_PATH', "/uploads");
+defined('DB_SERVER') or define('DB_SERVER', "mysql.dev.sendlove.us");
+defined('DB_USER') or define('DB_USER', "project_stage");
+defined('DB_PASSWORD') or define('DB_PASSWORD', "test30");
+defined('DB_NAME') or define('DB_NAME', "admin_dev");
+defined('ADMIN_COMPANIES_TABLE') or define('ADMIN_COMPANIES_TABLE', "company");
+defined('COMPANY_ID') or define('COMPANY_ID', 1);
+defined('ADMIN_UPLOAD_PATH') or define('ADMIN_UPLOAD_PATH', "/../public/uploads");
+defined('ADMIN_UPLOAD_URL') or define('ADMIN_UPLOAD_URL', "/uploads");
+
+//admin:configs/mail.ini
+defined('GOOGLE_USER') or define('GOOGLE_USER', "account@google.com");
+defined('GOOGLE_PWD') or define('GOOGLE_PWD', "password");
+

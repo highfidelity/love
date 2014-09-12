@@ -1,0 +1,104 @@
+<h2>Branding</h2>
+<div id="company_branding">
+    <div class="leftcolumn">
+        <h3>Company Logo</h3>
+        <img src="<?php echo $this->theme->getLogoSrc(); ?>" id="company_branding_logo" alt="Company Logo" />
+        <p>Click the image to choose a different logo<br />
+        Allowed image formats: PNG, JPEG, GIF<br />
+        Max. image size 100x100 pixels</p>
+        <div class="clear"></div>
+		<p id="error_upload"></p>
+		
+		<b>Choose theme</b>
+		<div class="sprite sprite-cross" id="remove_theme_btn"></div>
+		<select id="theme_dropdown">
+			<?php foreach ($this->themes as $theme) { ?>
+				<option value="<?php echo $theme->getTheme_name() ?>"<?php echo(($this->company->getSelected_theme() == $theme->getTheme_name()) ? ' selected="selected"' : ''); ?>><?php echo $theme->getTheme_name() ?></option>
+			<?php } ?>
+		</select><br/>
+		<span>Save custom theme as</span><br/>
+		<input class="input" type="text" id="new_theme_name"/><input type="button" id="save_theme_btn" value="Save"/>
+    </div>
+
+    <div class="rightcolumn">
+        <div class="appearance_left">
+            <h3>Background Image</h3>
+            <form action="<?php echo $this->baseUrl() ?>/company/updatebackground" id="form_background" method="post">
+                <div class="background_image">
+                    <div id="background_image" style="background-image: url('<?php echo $this->theme->getBackgroundImageSrc(); ?>&w=180&h');"></div>
+                    <p id="bgUploadTrigger">Click the image to choose a different background image</p>
+                    <ul>
+                        <li id="bg-tile-wrap">
+                            <input id="background_tile" type="checkbox" value="1" name="background_tile" <?php echo $this->theme->getBackground_tile() ? 'checked="checked"' : ''; ?> />
+                            <label for="background_tile">Tile</label>
+                            <div id="background_tile_options" style="display: none;">
+                                <input id="background_tile_y" type="checkbox" value="1" name="background_tile_y" checked="checked" />
+                                <label for="background_tile_y">Tile vertically</label><br/>                        
+                                <input id="background_tile_x" type="checkbox" value="1" name="background_tile_x" checked="checked" />
+                                <label for="background_tile_x">Tile horizontally</label>                            
+                            </div>
+                        </li>
+                        <li id="bg-fix-wrap">
+                            <input id="background_fix" type="checkbox" value="1" name="background_fix" <?php echo $this->theme->getBackground_fix() ? 'checked="checked"' : ''; ?> />
+                            <label for="background_fix">Scroll with page</label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <div class="appearance_right">
+            <h3>Appearance</h3>
+            <form action="<?php echo $this->baseUrl() ?>/company/updateappearance" id="form_appearance" method="post">
+            <div class="appearance_color">
+                <input type="hidden" name="background_color" value="<?php echo $this->theme->getBackground_color() ?>" />
+                <div id="apperance_background_color" style="background:#<?php echo $this->theme->getBackground_color() ?>;"></div>
+                Background color
+            </div>
+            <div class="appearance_color">
+                <input type="hidden" name="body_text_color" value="<?php echo $this->theme->getBody_text_color() ?>" />
+                <div id="apperance_body_text_color" style="background:#<?php echo $this->theme->getBody_text_color() ?>;"></div>
+                Body text color
+            </div>
+            <div class="appearance_color">
+                <input type="hidden" name="header_text_color" value="<?php echo $this->theme->getHeader_text_color() ?>" />
+                <div id="apperance_header_text_color" style="background:#<?php echo $this->theme->getHeader_text_color() ?>;"></div>
+                Header text color
+            </div>
+            <div class="appearance_color">
+                <input type="hidden" name="highlight1_color" value="<?php echo $this->theme->getHighlight1_color() ?>" />
+                <div id="apperance_highlight1_color" style="background:#<?php echo $this->theme->getHighlight1_color() ?>;"></div>
+                <span title="Links and primary relevant content">Highlight 1 color</span>
+            </div>
+            <div class="appearance_color">
+                <input type="hidden" name="highlight2_color" value="<?php echo $this->theme->getHighlight2_color() ?>" />
+                <div id="apperance_highlight2_color" style="background:#<?php echo $this->theme->getHighlight2_color() ?>;"></div>
+                <span title="Secondary relevant content">Highlight 2 color</span>
+            </div>
+            <div class="apperance_font">
+                Font 
+                <select name="website_font">
+                    <option>Choose</option>
+                    <?php foreach ($this->fonts as $font) : ?>
+                        <option value="<?php echo $font ?>"<?php echo(($font == $this->theme->getWebsite_font()) ? ' selected="selected"' : '') ?>><?php echo $font ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<?php echo $this->render('company/notifications.phtml') ?>
+
+<!-- Disabled until behavior for this is provided -->
+<!--
+<h2>Advanced</h2>
+<div id="company_advanced">
+    <p>Backup LoveMachine data</p>
+    <input type="button" value="Users Love" title="Users Love" />
+    <input type="button" value="Review History" title="Review History" />
+    <input type="button" value="Periods & Distribution" title="Periods & Distribution" />
+</div>
+-->

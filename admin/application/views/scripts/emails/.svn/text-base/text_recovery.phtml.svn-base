@@ -1,0 +1,7 @@
+Hi,
+
+Please click on the link below or copy and paste the url in browser to reset your password.
+	<?php echo $this->url ?>
+
+Love,
+SendLove

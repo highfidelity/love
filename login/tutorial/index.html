@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LoveMachine Login Tutorial</title>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <p>
+        This tutorial should give you, dear reader, a concise introduction to the library structure
+        and general architectural ideas of the login app.
+    </p>
+    <p>
+        I'll try to describe everything with short examples. If you have any further questions,
+        you can write me to <a href="mailto:seong@respice.net">&lt;seong@respice.net&gt;</a>, though
+        I hope after reading this document, this won't be necessary.
+    </p>
+    
+    <h1>General Structure</h2>
+    <p>
+        If you check the repository, you will find the following directory tree: 
+    </p>
+    <ul>
+        <li><em>appplication</em> - Application related libraries (models, controller, etc.)</li>
+        <li><em>htdocs</em> - Public directory for web-accessible files</li>
+        <li><em>lib</em> - General libraries</li>
+        <li><em>tests</em> - Unit tests</li>
+    </ul>
+    <p>
+        The directory structure follows the LM coding guidelines as described in
+        <a href="http://dev.sendlove.us/taskforce/wiki/doku.php">http://dev.sendlove.us/taskforce/wiki/doku.php</a>
+    </p>
+    
+    <h1>The General Library (lib)</h1>
+    <h2>Loader</h2>
+    <p>
+        The loader is the autoloader (<a href="http://de.php.net/manual/en/function.spl-autoload.php">http://de.php.net/manual/en/function.spl-autoload.php</a>)
+        implementation for the login app. 
+    </p>
+    <p>
+        The idea is, that you add classes and their respective filenames, where they are declared, to the
+        autoloader. The autoloader will then be started when a class is used.
+    </p>
+    <p>
+        Here is a short example of the autoloader in use:
+    </p>
+    <p>
+        <strong>Test.php</strong>
+        <pre>
+class Test
+{
+}
+        </pre>
+        <strong>index.php</strong>
+        <pre>
+require_once 'lib/Loader.php';
+require_onde 'lib/Loader/Loader_Exception.php';
+
+Loader::registerClass('Test', 'Test.php');
+
+$test = new Test();
+        </pre>
+    </p>
+    
+    <h2>DataObject</h2>
+    <p>
+        The DataObject is a utility class, which should help you solve common problems with models.
+    </p>
+    <p>
+        Usually you want a simple container, which stores and handles data.
+    </p>
+    <p>
+        For example, if you have a user class, you want to access it through different methods:
+    </p>
+    <pre>
+$user = new User();
+$user->setUsername('test');
+$user->setPassword('password');
+$user->setIsTestUser(true);
+if ($user->hasUsername()) {
+    echo $user->getUsername();
+}
+if ($user->hasPassword()) {
+    echo $user->getPassword();
+}
+    </pre>
+        The dataobject makes it easy for you to create such classes. If you wanted to implement a
+        class, which would have the functionality described above, you would simply write: 
+    </p>
+    <pre>
+class User extends DataObject
+{
+    protected $username;
+    protected $password;
+    protected $isTestUser;
+}
+    </pre>
+    <p>
+        That's it. Note, that all handled members are 
+        <pre>protected</pre>
+    </p>
+    <h3>Overloading methods</h3>
+    <p>        
+        You could define your own get/set-methods, if you want. Just add them to your class.
+    </p>
+    <pre>
+class User extends DataObject
+{
+    protected $username;
+    protected $password;
+    protected $isTestUser;
+    
+    public function setIsTestUser($isTestUser)
+    {
+        $this->isTestUser = (boolean) $isTestUser;
+        return $this;
+    }
+}
+    </pre>
+    <p>
+        Noticed, that we return the object itself? This is also the default behaviour, so we can
+        make use of the method chaining.
+    </p>
+    <pre>
+$user = new User();
+$user->setUsername('test')
+     ->setPassword('password')
+     ->setIsTestUser(true);
+    </pre>
+    <h3>Other protected members</h3>
+    <p>
+        The DataObject takes all protected members and handles them. But what, if you had a
+        member, which shouldn't be handled?
+    </p>
+    <pre>
+class User extends DataObject
+{
+    protected $databaseConnection;
+    protected $username;
+    
+    public function __construct()
+    {
+        $this->registerIgnoreProps(array('databaseConnection'));
+        parent::__construct();
+    }
+}
+    </pre>
+    <p>
+        The method
+        <pre>DataObject::registerIgnoreProps()</pre>
+        takes an array as an argument. Just list the names of the members, which shouldn't be handled
+        by the DataObject.
+    </p>
+    <p>
+        Also make sure, that you call the constructor from DataObject after you set the ignored 
+        properties.
+    </p>
+    <h3>Going beyond</h3>
+    <p>
+        Just have a look at the user model in this application. You can find it under
+        <em>application/model/User.php</em>. It's a nice example of how you can implement your data objects.
+    </p>
+</body>
+</html>

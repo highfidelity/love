@@ -1,0 +1,23 @@
+<?php
+//
+//  Copyright (c) 2009-2010, LoveMachine Inc.
+//  All Rights Reserved. 
+//  http://www.lovemachineinc.com
+//
+
+ob_start();
+include("config.php");
+include("class.session_handler.php");
+
+unset($_SESSION['username']);
+unset($_SESSION['userid']);
+unset($_SESSION['confirm_string']);
+unset($_SESSION['is_auditor']);
+unset($_SESSION['nickname']);
+if (isset($_COOKIE[session_name()])) {
+    setcookie(session_name(), '', time()-42000, '/');
+}
+session_destroy();
+header("location:login.php");
+exit;
+?>
